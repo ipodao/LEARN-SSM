@@ -100,3 +100,174 @@
 [14:22:19.978][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-7] ==>  Preparing: SELECT -- *???//这样真的好么?答案就是,这样不好. id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
 [14:22:19.979][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-7] ==> Parameters: storm(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
 [14:22:20.025][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-7] <==      Total: 1
+[15:15:19.608][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[15:15:19.767][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] ==> Parameters: storm(String)
+[15:15:19.826][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] <==      Total: 1
+[15:15:19.914][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] ==>  Preparing: SELECT -- *???//这样真的好么?答案就是,这样不好...要什么查什么，不要多查！！！ id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
+[15:15:19.914][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] ==> Parameters: storm(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
+[15:15:19.960][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] <==      Total: 1
+[15:15:47.756][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[15:15:47.757][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] ==> Parameters: null
+[15:15:47.796][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] <==      Total: 1
+[15:15:54.318][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-8] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[15:15:54.318][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-8] ==> Parameters: storm(String)
+[15:15:54.357][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-8] <==      Total: 1
+[15:15:54.436][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-8] ==>  Preparing: SELECT -- *???//这样真的好么?答案就是,这样不好...要什么查什么，不要多查！！！ id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
+[15:15:54.437][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-8] ==> Parameters: storm(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
+[15:15:54.478][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-8] <==      Total: 1
+[15:30:46.653][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[15:30:46.680][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==> Parameters: storm(String)
+[15:30:46.736][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] <==      Total: 1
+[15:30:46.819][DEBUG][c.m.d.U.selectQuestionByUsername][http-apr-8080-exec-2] ==>  Preparing: select question from mmall_user where username = ? 
+[15:30:46.820][DEBUG][c.m.d.U.selectQuestionByUsername][http-apr-8080-exec-2] ==> Parameters: storm(String)
+[15:30:46.865][DEBUG][c.m.d.U.selectQuestionByUsername][http-apr-8080-exec-2] <==      Total: 1
+[15:31:52.801][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[15:31:52.802][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==> Parameters: null
+[15:31:52.841][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] <==      Total: 1
+[15:31:56.637][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[15:31:56.638][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] ==> Parameters: storm(String)
+[15:31:56.676][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] <==      Total: 1
+[15:31:56.754][DEBUG][c.m.d.U.selectQuestionByUsername][http-apr-8080-exec-7] ==>  Preparing: select question from mmall_user where username = ? 
+[15:31:56.754][DEBUG][c.m.d.U.selectQuestionByUsername][http-apr-8080-exec-7] ==> Parameters: storm(String)
+[15:31:56.795][DEBUG][c.m.d.U.selectQuestionByUsername][http-apr-8080-exec-7] <==      Total: 1
+[15:32:15.229][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-8] ==>  Preparing: SELECT count(1) from mmall_user where username=? and question = ? and answer = ? 
+[15:32:15.230][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-8] ==> Parameters: storm(String), null, null
+[15:32:15.268][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-8] <==      Total: 1
+[15:32:43.306][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-10] ==>  Preparing: SELECT count(1) from mmall_user where username=? and question = ? and answer = ? 
+[15:32:43.307][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-10] ==> Parameters: storm(String), null, storm(String)
+[15:32:43.346][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-10] <==      Total: 1
+[15:32:48.132][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-3] ==>  Preparing: SELECT count(1) from mmall_user where username=? and question = ? and answer = ? 
+[15:32:48.133][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-3] ==> Parameters: storm(String), null, storm的答案(String)
+[15:32:48.172][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-3] <==      Total: 1
+[15:34:25.352][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-4] ==>  Preparing: SELECT count(1) from mmall_user where username=? and question = ? and answer = ? 
+[15:34:25.353][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-4] ==> Parameters: storm(String), storm的问题(String), storm的答案(String)
+[15:34:25.396][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-4] <==      Total: 1
+[15:38:38.703][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[15:38:38.704][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==> Parameters: storm(String)
+[15:38:38.742][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] <==      Total: 1
+[15:38:38.839][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-5] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
+[15:38:38.839][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-5] ==> Parameters: storm(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
+[15:38:38.887][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-5] <==      Total: 1
+[15:39:59.100][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[15:39:59.101][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] ==> Parameters: storm(String)
+[15:39:59.140][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] <==      Total: 1
+[15:39:59.218][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-7] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
+[15:39:59.219][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-7] ==> Parameters: storm(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
+[15:39:59.259][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-7] <==      Total: 1
+[15:40:22.176][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-apr-8080-exec-8] ==>  Preparing: select id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where id = ? 
+[15:40:22.176][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-apr-8080-exec-8] ==> Parameters: 22(Integer)
+[15:40:22.216][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-apr-8080-exec-8] <==      Total: 1
+[15:40:25.623][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-apr-8080-exec-9] ==>  Preparing: select id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where id = ? 
+[15:40:25.624][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-apr-8080-exec-9] ==> Parameters: 22(Integer)
+[15:40:25.663][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-apr-8080-exec-9] <==      Total: 1
+[15:40:40.678][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-apr-8080-exec-1] ==>  Preparing: select count(1) from mmall_user where email = ? and id != ? 
+[15:40:40.679][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-apr-8080-exec-1] ==> Parameters: storm@qq.com(String), 22(Integer)
+[15:40:40.719][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-apr-8080-exec-1] <==      Total: 1
+[15:40:40.838][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-1] ==>  Preparing: update mmall_user SET email = ? where id = ? 
+[15:40:40.838][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-1] ==> Parameters: storm@qq.com(String), 22(Integer)
+[15:40:40.878][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-1] <==    Updates: 1
+[15:40:49.673][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-apr-8080-exec-10] ==>  Preparing: select count(1) from mmall_user where email = ? and id != ? 
+[15:40:49.673][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-apr-8080-exec-10] ==> Parameters: storm@qq.com(String), 22(Integer)
+[15:40:49.712][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-apr-8080-exec-10] <==      Total: 1
+[15:40:49.789][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-10] ==>  Preparing: update mmall_user SET email = ? where id = ? 
+[15:40:49.790][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-10] ==> Parameters: storm@qq.com(String), 22(Integer)
+[15:40:49.830][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-10] <==    Updates: 1
+[15:41:18.777][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[15:41:18.778][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==> Parameters: storm(String)
+[15:41:18.816][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] <==      Total: 1
+[15:41:18.894][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
+[15:41:18.895][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] ==> Parameters: storm(String), 849C829D658BAAEFF512D766B0DB3CCE(String)
+[15:41:18.934][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] <==      Total: 0
+[15:41:23.775][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[15:41:23.776][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] ==> Parameters: storm(String)
+[15:41:23.815][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] <==      Total: 1
+[15:41:23.892][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-6] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
+[15:41:23.893][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-6] ==> Parameters: storm(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
+[15:41:23.932][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-6] <==      Total: 1
+[15:45:21.609][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-1] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[15:45:21.610][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-1] ==> Parameters: storm(String)
+[15:45:21.643][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-1] <==      Total: 1
+[15:45:21.958][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-1] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
+[15:45:21.959][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-1] ==> Parameters: storm(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
+[15:45:21.993][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-1] <==      Total: 1
+[15:46:05.359][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-2] ==>  Preparing: SELECT count(1) from mmall_user where username=? and question = ? and answer = ? 
+[15:46:05.359][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-2] ==> Parameters: storm(String), storm的问题(String), storm的答案(String)
+[15:46:05.394][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-2] <==      Total: 1
+[20:17:09.409][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-9] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[20:17:09.412][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-9] ==> Parameters: storm(String)
+[20:17:09.459][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-9] <==      Total: 1
+[20:17:09.548][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-9] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
+[20:17:09.548][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-9] ==> Parameters: storm(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
+[20:17:09.593][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-9] <==      Total: 1
+[20:20:00.386][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-3] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[20:20:00.386][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-3] ==> Parameters: storm(String)
+[20:20:00.429][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-3] <==      Total: 1
+[20:23:48.628][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[20:23:48.628][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] ==> Parameters: storm(String)
+[20:23:48.671][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] <==      Total: 1
+[20:23:55.229][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[20:23:55.229][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==> Parameters: storm3(String)
+[20:23:55.275][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] <==      Total: 1
+[20:23:55.363][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-5] ==>  Preparing: select count(1) from mmall_user where email = ? 
+[20:23:55.364][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-5] ==> Parameters: storm@qq.com(String)
+[20:23:55.407][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-5] <==      Total: 1
+[20:24:34.637][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-10] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[20:24:34.637][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-10] ==> Parameters: storm3(String)
+[20:24:34.680][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-10] <==      Total: 1
+[20:24:34.766][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-10] ==>  Preparing: select count(1) from mmall_user where email = ? 
+[20:24:34.766][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-10] ==> Parameters: storm3@qq.com(String)
+[20:24:34.810][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-10] <==      Total: 1
+[20:24:34.896][DEBUG][com.mmall.dao.UserMapper.insert][http-apr-8080-exec-10] ==>  Preparing: insert into mmall_user (id, username, password, email, phone, question, answer, role, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, now(), now()) 
+[20:24:34.898][DEBUG][com.mmall.dao.UserMapper.insert][http-apr-8080-exec-10] ==> Parameters: null, storm3(String), 529DCEFDB5A5634C87D980DAE7DF1076(String), storm3@qq.com(String), 18913153155(String), storm的问题3(String), storm的答案3(String), 0(Integer)
+[20:24:34.943][DEBUG][com.mmall.dao.UserMapper.insert][http-apr-8080-exec-10] <==    Updates: 1
+[20:27:18.007][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[20:27:18.007][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] ==> Parameters: storm(String)
+[20:27:18.050][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] <==      Total: 1
+[20:27:33.325][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[20:27:33.326][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==> Parameters: storm4(String)
+[20:27:33.369][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] <==      Total: 1
+[20:27:59.591][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-9] ==>  Preparing: select count(1) from mmall_user where email = ? 
+[20:27:59.591][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-9] ==> Parameters: storm@qq.com(String)
+[20:27:59.634][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-9] <==      Total: 1
+[20:28:59.466][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[20:28:59.466][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] ==> Parameters: storm3(String)
+[20:28:59.509][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] <==      Total: 1
+[20:28:59.595][DEBUG][c.m.d.U.selectQuestionByUsername][http-apr-8080-exec-6] ==>  Preparing: select question from mmall_user where username = ? 
+[20:28:59.595][DEBUG][c.m.d.U.selectQuestionByUsername][http-apr-8080-exec-6] ==> Parameters: storm3(String)
+[20:28:59.640][DEBUG][c.m.d.U.selectQuestionByUsername][http-apr-8080-exec-6] <==      Total: 1
+[20:29:34.209][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-8] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[20:29:34.210][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-8] ==> Parameters: null
+[20:29:34.254][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-8] <==      Total: 1
+[20:30:06.141][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-1] ==>  Preparing: SELECT count(1) from mmall_user where username=? and question = ? and answer = ? 
+[20:30:06.142][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-1] ==> Parameters: storm3(String), null, storm的答案3(String)
+[20:30:06.185][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-1] <==      Total: 1
+[20:30:33.824][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-4] ==>  Preparing: SELECT count(1) from mmall_user where username=? and question = ? and answer = ? 
+[20:30:33.824][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-4] ==> Parameters: storm3(String), storm的问题3(String), storm的答案3(String)
+[20:30:33.868][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-4] <==      Total: 1
+[20:32:17.589][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[20:32:17.590][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==> Parameters: storm(String)
+[20:32:17.636][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] <==      Total: 1
+[20:32:52.528][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-10] ==>  Preparing: SELECT count(1) from mmall_user where username=? and question = ? and answer = ? 
+[20:32:52.529][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-10] ==> Parameters: storm(String), storm的问题(String), storm的答案(String)
+[20:32:52.572][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-10] <==      Total: 1
+[20:33:04.784][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-3] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[20:33:04.784][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-3] ==> Parameters: storm(String)
+[20:33:04.827][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-3] <==      Total: 1
+[20:33:04.914][DEBUG][c.m.d.U.updatePasswordByUsername][http-apr-8080-exec-3] ==>  Preparing: update mmall_user SET password = ?,update_time = now() where username = ? 
+[20:33:04.915][DEBUG][c.m.d.U.updatePasswordByUsername][http-apr-8080-exec-3] ==> Parameters: 849C829D658BAAEFF512D766B0DB3CCE(String), storm(String)
+[20:33:04.968][DEBUG][c.m.d.U.updatePasswordByUsername][http-apr-8080-exec-3] <==    Updates: 1
+[20:34:24.781][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-apr-8080-exec-4] ==>  Preparing: SELECT count(1) from mmall_user where password = ? and id = ? 
+[20:34:24.782][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-apr-8080-exec-4] ==> Parameters: 849C829D658BAAEFF512D766B0DB3CCE(String), 22(Integer)
+[20:34:24.825][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-apr-8080-exec-4] <==      Total: 1
+[20:34:24.915][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-4] ==>  Preparing: update mmall_user SET username = ?, password = ?, email = ?, phone = ?, question = ?, answer = ?, role = ?, create_time = ?, update_time = now() where id = ? 
+[20:34:24.917][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-4] ==> Parameters: storm(String), 849C829D658BAAEFF512D766B0DB3CCE(String), storm@qq.com(String), 18095636595(String), storm的问题(String), storm的答案(String), 0(Integer), 2017-09-14 13:34:26.0(Timestamp), 22(Integer)
+[20:34:24.966][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-4] <==    Updates: 1
+[20:35:21.438][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-apr-8080-exec-5] ==>  Preparing: select count(1) from mmall_user where email = ? and id != ? 
+[20:35:21.438][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-apr-8080-exec-5] ==> Parameters: storm@qq.com(String), 22(Integer)
+[20:35:21.481][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-apr-8080-exec-5] <==      Total: 1
+[20:35:21.573][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-5] ==>  Preparing: update mmall_user SET email = ?, phone = ?, question = ?, answer = ? where id = ? 
+[20:35:21.574][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-5] ==> Parameters: storm@qq.com(String), 18913153155(String), storm的问题1(String), storm的答案1(String), 22(Integer)
+[20:35:21.618][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-5] <==    Updates: 1
+[20:36:35.502][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-apr-8080-exec-10] ==>  Preparing: select id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where id = ? 
+[20:36:35.503][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-apr-8080-exec-10] ==> Parameters: 22(Integer)
+[20:36:35.547][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-apr-8080-exec-10] <==      Total: 1
