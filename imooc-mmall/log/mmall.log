@@ -1,273 +1,501 @@
-[13:32:35.407][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-10] ==>  Preparing: SELECT COUNT (1) FROM mall_user WHERE username = ? 
-[13:32:35.453][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-10] ==> Parameters: storm(String)
-[13:35:38.551][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-3] ==>  Preparing: SELECT COUNT (1) FROM mall_user WHERE username = ? 
-[13:35:38.551][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-3] ==> Parameters: null
-[13:35:46.453][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] ==>  Preparing: SELECT COUNT (1) FROM mall_user WHERE username = ? 
-[13:35:46.453][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] ==> Parameters: storm(String)
-[13:39:10.702][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[13:39:10.736][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==> Parameters: storm(String)
-[13:39:10.797][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] <==      Total: 1
-[13:39:10.882][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] ==>  Preparing: SELECT -- *???//这样真的好么?答案就是,这样不好. id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[13:39:10.883][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] ==> Parameters: storm(String), storm(String)
-[13:39:11.176][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] <==      Total: 1
-[13:41:31.912][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[13:41:31.912][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==> Parameters: storm1(String)
-[13:41:31.952][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] <==      Total: 1
-[13:41:37.132][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[13:41:37.132][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] ==> Parameters: storm(String)
-[13:41:37.172][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] <==      Total: 1
-[13:41:37.253][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-7] ==>  Preparing: SELECT -- *???//这样真的好么?答案就是,这样不好. id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[13:41:37.253][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-7] ==> Parameters: storm(String), storm0(String)
-[13:41:37.294][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-7] <==      Total: 0
-[13:41:41.144][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-8] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[13:41:41.144][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-8] ==> Parameters: storm(String)
-[13:41:41.185][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-8] <==      Total: 1
-[13:41:41.267][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-8] ==>  Preparing: SELECT -- *???//这样真的好么?答案就是,这样不好. id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[13:41:41.267][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-8] ==> Parameters: storm(String), storm(String)
-[13:41:41.555][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-8] <==      Total: 1
-[13:44:06.398][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-10] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[13:44:06.399][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-10] ==> Parameters: null
-[13:44:06.439][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-10] <==      Total: 1
-[13:44:21.739][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-3] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[13:44:21.739][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-3] ==> Parameters: null
-[13:44:21.780][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-3] <==      Total: 1
-[13:45:27.817][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[13:45:27.817][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] ==> Parameters: null
-[13:45:27.857][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] <==      Total: 1
-[13:45:59.681][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[13:45:59.681][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] ==> Parameters: null
-[13:45:59.721][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] <==      Total: 1
-[13:46:43.025][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-10] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[13:46:43.026][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-10] ==> Parameters: storm(String)
-[13:46:43.066][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-10] <==      Total: 1
-[13:46:43.146][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-10] ==>  Preparing: SELECT -- *???//这样真的好么?答案就是,这样不好. id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[13:46:43.146][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-10] ==> Parameters: storm(String), storm(String)
-[13:46:43.187][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-10] <==      Total: 1
-[13:46:57.516][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-3] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[13:46:57.516][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-3] ==> Parameters: storm1(String)
-[13:46:57.556][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-3] <==      Total: 1
-[13:47:03.885][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[13:47:03.886][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==> Parameters: storm(String)
-[13:47:03.926][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] <==      Total: 1
-[13:47:04.258][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] ==>  Preparing: SELECT -- *???//这样真的好么?答案就是,这样不好. id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[13:47:04.260][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] ==> Parameters: storm(String), storm1(String)
-[13:47:04.301][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] <==      Total: 0
-[13:47:08.283][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[13:47:08.284][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] ==> Parameters: storm(String)
-[13:47:08.325][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] <==      Total: 1
-[13:47:08.655][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] ==>  Preparing: SELECT -- *???//这样真的好么?答案就是,这样不好. id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[13:47:08.655][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] ==> Parameters: storm(String), storm(String)
-[13:47:08.695][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] <==      Total: 1
-[14:20:38.093][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-8] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[14:20:38.120][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-8] ==> Parameters: storm(String)
-[14:20:38.188][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-8] <==      Total: 1
-[14:21:16.743][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-1] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[14:21:16.744][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-1] ==> Parameters: storm1(String)
-[14:21:16.789][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-1] <==      Total: 1
-[14:21:16.878][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-1] ==>  Preparing: select count(1) from mmall_user where email = ? 
-[14:21:16.879][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-1] ==> Parameters: storm@qq.com(String)
-[14:21:16.923][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-1] <==      Total: 1
-[14:21:26.886][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[14:21:26.887][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==> Parameters: storm1(String)
-[14:21:26.931][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] <==      Total: 1
-[14:21:27.021][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-2] ==>  Preparing: select count(1) from mmall_user where email = ? 
-[14:21:27.021][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-2] ==> Parameters: storm1@qq.com(String)
-[14:21:27.066][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-2] <==      Total: 1
-[14:21:27.161][DEBUG][com.mmall.dao.UserMapper.insert][http-apr-8080-exec-2] ==>  Preparing: insert into mmall_user (id, username, password, email, phone, question, answer, role, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, now(), now()) 
-[14:21:27.163][DEBUG][com.mmall.dao.UserMapper.insert][http-apr-8080-exec-2] ==> Parameters: null, storm1(String), BEFE1F292F6F892960D2AE6DC5A43554(String), storm1@qq.com(String), null, null, null, 0(Integer)
-[14:21:27.209][DEBUG][com.mmall.dao.UserMapper.insert][http-apr-8080-exec-2] <==    Updates: 1
-[14:21:50.207][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[14:21:50.207][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] ==> Parameters: storm1(String)
-[14:21:50.252][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] <==      Total: 1
-[14:21:50.345][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] ==>  Preparing: SELECT -- *???//这样真的好么?答案就是,这样不好. id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[14:21:50.347][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] ==> Parameters: storm1(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
-[14:21:50.401][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] <==      Total: 1
-[14:21:54.143][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[14:21:54.143][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==> Parameters: storm(String)
-[14:21:54.188][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] <==      Total: 1
-[14:21:54.278][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-5] ==>  Preparing: SELECT -- *???//这样真的好么?答案就是,这样不好. id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[14:21:54.280][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-5] ==> Parameters: storm(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
-[14:21:54.325][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-5] <==      Total: 0
-[14:21:57.849][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[14:21:57.849][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] ==> Parameters: storm(String)
-[14:21:57.894][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] <==      Total: 1
-[14:21:57.984][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-6] ==>  Preparing: SELECT -- *???//这样真的好么?答案就是,这样不好. id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[14:21:57.985][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-6] ==> Parameters: storm(String), 849C829D658BAAEFF512D766B0DB3CCE(String)
-[14:21:58.030][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-6] <==      Total: 0
-[14:22:19.843][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[14:22:19.843][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] ==> Parameters: storm(String)
-[14:22:19.888][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] <==      Total: 1
-[14:22:19.978][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-7] ==>  Preparing: SELECT -- *???//这样真的好么?答案就是,这样不好. id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[14:22:19.979][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-7] ==> Parameters: storm(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
-[14:22:20.025][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-7] <==      Total: 1
-[15:15:19.608][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[15:15:19.767][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] ==> Parameters: storm(String)
-[15:15:19.826][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] <==      Total: 1
-[15:15:19.914][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] ==>  Preparing: SELECT -- *???//这样真的好么?答案就是,这样不好...要什么查什么，不要多查！！！ id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[15:15:19.914][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] ==> Parameters: storm(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
-[15:15:19.960][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] <==      Total: 1
-[15:15:47.756][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[15:15:47.757][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] ==> Parameters: null
-[15:15:47.796][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] <==      Total: 1
-[15:15:54.318][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-8] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[15:15:54.318][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-8] ==> Parameters: storm(String)
-[15:15:54.357][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-8] <==      Total: 1
-[15:15:54.436][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-8] ==>  Preparing: SELECT -- *???//这样真的好么?答案就是,这样不好...要什么查什么，不要多查！！！ id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[15:15:54.437][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-8] ==> Parameters: storm(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
-[15:15:54.478][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-8] <==      Total: 1
-[15:30:46.653][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[15:30:46.680][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==> Parameters: storm(String)
-[15:30:46.736][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] <==      Total: 1
-[15:30:46.819][DEBUG][c.m.d.U.selectQuestionByUsername][http-apr-8080-exec-2] ==>  Preparing: select question from mmall_user where username = ? 
-[15:30:46.820][DEBUG][c.m.d.U.selectQuestionByUsername][http-apr-8080-exec-2] ==> Parameters: storm(String)
-[15:30:46.865][DEBUG][c.m.d.U.selectQuestionByUsername][http-apr-8080-exec-2] <==      Total: 1
-[15:31:52.801][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[15:31:52.802][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==> Parameters: null
-[15:31:52.841][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] <==      Total: 1
-[15:31:56.637][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[15:31:56.638][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] ==> Parameters: storm(String)
-[15:31:56.676][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] <==      Total: 1
-[15:31:56.754][DEBUG][c.m.d.U.selectQuestionByUsername][http-apr-8080-exec-7] ==>  Preparing: select question from mmall_user where username = ? 
-[15:31:56.754][DEBUG][c.m.d.U.selectQuestionByUsername][http-apr-8080-exec-7] ==> Parameters: storm(String)
-[15:31:56.795][DEBUG][c.m.d.U.selectQuestionByUsername][http-apr-8080-exec-7] <==      Total: 1
-[15:32:15.229][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-8] ==>  Preparing: SELECT count(1) from mmall_user where username=? and question = ? and answer = ? 
-[15:32:15.230][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-8] ==> Parameters: storm(String), null, null
-[15:32:15.268][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-8] <==      Total: 1
-[15:32:43.306][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-10] ==>  Preparing: SELECT count(1) from mmall_user where username=? and question = ? and answer = ? 
-[15:32:43.307][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-10] ==> Parameters: storm(String), null, storm(String)
-[15:32:43.346][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-10] <==      Total: 1
-[15:32:48.132][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-3] ==>  Preparing: SELECT count(1) from mmall_user where username=? and question = ? and answer = ? 
-[15:32:48.133][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-3] ==> Parameters: storm(String), null, storm的答案(String)
-[15:32:48.172][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-3] <==      Total: 1
-[15:34:25.352][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-4] ==>  Preparing: SELECT count(1) from mmall_user where username=? and question = ? and answer = ? 
-[15:34:25.353][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-4] ==> Parameters: storm(String), storm的问题(String), storm的答案(String)
-[15:34:25.396][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-4] <==      Total: 1
-[15:38:38.703][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[15:38:38.704][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==> Parameters: storm(String)
-[15:38:38.742][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] <==      Total: 1
-[15:38:38.839][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-5] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[15:38:38.839][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-5] ==> Parameters: storm(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
-[15:38:38.887][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-5] <==      Total: 1
-[15:39:59.100][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[15:39:59.101][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] ==> Parameters: storm(String)
-[15:39:59.140][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] <==      Total: 1
-[15:39:59.218][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-7] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[15:39:59.219][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-7] ==> Parameters: storm(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
-[15:39:59.259][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-7] <==      Total: 1
-[15:40:22.176][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-apr-8080-exec-8] ==>  Preparing: select id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where id = ? 
-[15:40:22.176][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-apr-8080-exec-8] ==> Parameters: 22(Integer)
-[15:40:22.216][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-apr-8080-exec-8] <==      Total: 1
-[15:40:25.623][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-apr-8080-exec-9] ==>  Preparing: select id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where id = ? 
-[15:40:25.624][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-apr-8080-exec-9] ==> Parameters: 22(Integer)
-[15:40:25.663][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-apr-8080-exec-9] <==      Total: 1
-[15:40:40.678][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-apr-8080-exec-1] ==>  Preparing: select count(1) from mmall_user where email = ? and id != ? 
-[15:40:40.679][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-apr-8080-exec-1] ==> Parameters: storm@qq.com(String), 22(Integer)
-[15:40:40.719][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-apr-8080-exec-1] <==      Total: 1
-[15:40:40.838][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-1] ==>  Preparing: update mmall_user SET email = ? where id = ? 
-[15:40:40.838][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-1] ==> Parameters: storm@qq.com(String), 22(Integer)
-[15:40:40.878][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-1] <==    Updates: 1
-[15:40:49.673][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-apr-8080-exec-10] ==>  Preparing: select count(1) from mmall_user where email = ? and id != ? 
-[15:40:49.673][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-apr-8080-exec-10] ==> Parameters: storm@qq.com(String), 22(Integer)
-[15:40:49.712][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-apr-8080-exec-10] <==      Total: 1
-[15:40:49.789][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-10] ==>  Preparing: update mmall_user SET email = ? where id = ? 
-[15:40:49.790][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-10] ==> Parameters: storm@qq.com(String), 22(Integer)
-[15:40:49.830][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-10] <==    Updates: 1
-[15:41:18.777][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[15:41:18.778][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==> Parameters: storm(String)
-[15:41:18.816][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] <==      Total: 1
-[15:41:18.894][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[15:41:18.895][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] ==> Parameters: storm(String), 849C829D658BAAEFF512D766B0DB3CCE(String)
-[15:41:18.934][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] <==      Total: 0
-[15:41:23.775][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[15:41:23.776][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] ==> Parameters: storm(String)
-[15:41:23.815][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] <==      Total: 1
-[15:41:23.892][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-6] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[15:41:23.893][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-6] ==> Parameters: storm(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
-[15:41:23.932][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-6] <==      Total: 1
-[15:45:21.609][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-1] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[15:45:21.610][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-1] ==> Parameters: storm(String)
-[15:45:21.643][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-1] <==      Total: 1
-[15:45:21.958][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-1] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[15:45:21.959][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-1] ==> Parameters: storm(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
-[15:45:21.993][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-1] <==      Total: 1
-[15:46:05.359][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-2] ==>  Preparing: SELECT count(1) from mmall_user where username=? and question = ? and answer = ? 
-[15:46:05.359][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-2] ==> Parameters: storm(String), storm的问题(String), storm的答案(String)
-[15:46:05.394][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-2] <==      Total: 1
-[20:17:09.409][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-9] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[20:17:09.412][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-9] ==> Parameters: storm(String)
-[20:17:09.459][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-9] <==      Total: 1
-[20:17:09.548][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-9] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[20:17:09.548][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-9] ==> Parameters: storm(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
-[20:17:09.593][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-9] <==      Total: 1
-[20:20:00.386][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-3] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[20:20:00.386][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-3] ==> Parameters: storm(String)
-[20:20:00.429][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-3] <==      Total: 1
-[20:23:48.628][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[20:23:48.628][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] ==> Parameters: storm(String)
-[20:23:48.671][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] <==      Total: 1
-[20:23:55.229][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[20:23:55.229][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==> Parameters: storm3(String)
-[20:23:55.275][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] <==      Total: 1
-[20:23:55.363][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-5] ==>  Preparing: select count(1) from mmall_user where email = ? 
-[20:23:55.364][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-5] ==> Parameters: storm@qq.com(String)
-[20:23:55.407][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-5] <==      Total: 1
-[20:24:34.637][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-10] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[20:24:34.637][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-10] ==> Parameters: storm3(String)
-[20:24:34.680][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-10] <==      Total: 1
-[20:24:34.766][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-10] ==>  Preparing: select count(1) from mmall_user where email = ? 
-[20:24:34.766][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-10] ==> Parameters: storm3@qq.com(String)
-[20:24:34.810][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-10] <==      Total: 1
-[20:24:34.896][DEBUG][com.mmall.dao.UserMapper.insert][http-apr-8080-exec-10] ==>  Preparing: insert into mmall_user (id, username, password, email, phone, question, answer, role, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, now(), now()) 
-[20:24:34.898][DEBUG][com.mmall.dao.UserMapper.insert][http-apr-8080-exec-10] ==> Parameters: null, storm3(String), 529DCEFDB5A5634C87D980DAE7DF1076(String), storm3@qq.com(String), 18913153155(String), storm的问题3(String), storm的答案3(String), 0(Integer)
-[20:24:34.943][DEBUG][com.mmall.dao.UserMapper.insert][http-apr-8080-exec-10] <==    Updates: 1
-[20:27:18.007][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[20:27:18.007][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] ==> Parameters: storm(String)
-[20:27:18.050][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] <==      Total: 1
-[20:27:33.325][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[20:27:33.326][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==> Parameters: storm4(String)
-[20:27:33.369][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] <==      Total: 1
-[20:27:59.591][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-9] ==>  Preparing: select count(1) from mmall_user where email = ? 
-[20:27:59.591][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-9] ==> Parameters: storm@qq.com(String)
-[20:27:59.634][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-apr-8080-exec-9] <==      Total: 1
-[20:28:59.466][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[20:28:59.466][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] ==> Parameters: storm3(String)
-[20:28:59.509][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] <==      Total: 1
-[20:28:59.595][DEBUG][c.m.d.U.selectQuestionByUsername][http-apr-8080-exec-6] ==>  Preparing: select question from mmall_user where username = ? 
-[20:28:59.595][DEBUG][c.m.d.U.selectQuestionByUsername][http-apr-8080-exec-6] ==> Parameters: storm3(String)
-[20:28:59.640][DEBUG][c.m.d.U.selectQuestionByUsername][http-apr-8080-exec-6] <==      Total: 1
-[20:29:34.209][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-8] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[20:29:34.210][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-8] ==> Parameters: null
-[20:29:34.254][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-8] <==      Total: 1
-[20:30:06.141][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-1] ==>  Preparing: SELECT count(1) from mmall_user where username=? and question = ? and answer = ? 
-[20:30:06.142][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-1] ==> Parameters: storm3(String), null, storm的答案3(String)
-[20:30:06.185][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-1] <==      Total: 1
-[20:30:33.824][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-4] ==>  Preparing: SELECT count(1) from mmall_user where username=? and question = ? and answer = ? 
-[20:30:33.824][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-4] ==> Parameters: storm3(String), storm的问题3(String), storm的答案3(String)
-[20:30:33.868][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-4] <==      Total: 1
-[20:32:17.589][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[20:32:17.590][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==> Parameters: storm(String)
-[20:32:17.636][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] <==      Total: 1
-[20:32:52.528][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-10] ==>  Preparing: SELECT count(1) from mmall_user where username=? and question = ? and answer = ? 
-[20:32:52.529][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-10] ==> Parameters: storm(String), storm的问题(String), storm的答案(String)
-[20:32:52.572][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-apr-8080-exec-10] <==      Total: 1
-[20:33:04.784][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-3] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[20:33:04.784][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-3] ==> Parameters: storm(String)
-[20:33:04.827][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-3] <==      Total: 1
-[20:33:04.914][DEBUG][c.m.d.U.updatePasswordByUsername][http-apr-8080-exec-3] ==>  Preparing: update mmall_user SET password = ?,update_time = now() where username = ? 
-[20:33:04.915][DEBUG][c.m.d.U.updatePasswordByUsername][http-apr-8080-exec-3] ==> Parameters: 849C829D658BAAEFF512D766B0DB3CCE(String), storm(String)
-[20:33:04.968][DEBUG][c.m.d.U.updatePasswordByUsername][http-apr-8080-exec-3] <==    Updates: 1
-[20:34:24.781][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-apr-8080-exec-4] ==>  Preparing: SELECT count(1) from mmall_user where password = ? and id = ? 
-[20:34:24.782][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-apr-8080-exec-4] ==> Parameters: 849C829D658BAAEFF512D766B0DB3CCE(String), 22(Integer)
-[20:34:24.825][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-apr-8080-exec-4] <==      Total: 1
-[20:34:24.915][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-4] ==>  Preparing: update mmall_user SET username = ?, password = ?, email = ?, phone = ?, question = ?, answer = ?, role = ?, create_time = ?, update_time = now() where id = ? 
-[20:34:24.917][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-4] ==> Parameters: storm(String), 849C829D658BAAEFF512D766B0DB3CCE(String), storm@qq.com(String), 18095636595(String), storm的问题(String), storm的答案(String), 0(Integer), 2017-09-14 13:34:26.0(Timestamp), 22(Integer)
-[20:34:24.966][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-4] <==    Updates: 1
-[20:35:21.438][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-apr-8080-exec-5] ==>  Preparing: select count(1) from mmall_user where email = ? and id != ? 
-[20:35:21.438][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-apr-8080-exec-5] ==> Parameters: storm@qq.com(String), 22(Integer)
-[20:35:21.481][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-apr-8080-exec-5] <==      Total: 1
-[20:35:21.573][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-5] ==>  Preparing: update mmall_user SET email = ?, phone = ?, question = ?, answer = ? where id = ? 
-[20:35:21.574][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-5] ==> Parameters: storm@qq.com(String), 18913153155(String), storm的问题1(String), storm的答案1(String), 22(Integer)
-[20:35:21.618][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-apr-8080-exec-5] <==    Updates: 1
-[20:36:35.502][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-apr-8080-exec-10] ==>  Preparing: select id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where id = ? 
-[20:36:35.503][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-apr-8080-exec-10] ==> Parameters: 22(Integer)
-[20:36:35.547][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-apr-8080-exec-10] <==      Total: 1
+[17:21:35.412][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[17:21:35.467][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==> Parameters: storm(String)
+[17:21:35.523][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] <==      Total: 1
+[17:21:35.606][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
+[17:21:35.606][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] ==> Parameters: storm(String), 529DCEFDB5A5634C87D980DAE7DF1076(String)
+[17:21:35.644][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] <==      Total: 0
+[17:22:01.204][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[17:22:01.205][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==> Parameters: storm(String)
+[17:22:01.241][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] <==      Total: 1
+[17:22:01.315][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-5] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
+[17:22:01.315][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-5] ==> Parameters: storm(String), 849C829D658BAAEFF512D766B0DB3CCE(String)
+[17:22:01.360][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-5] <==      Total: 1
+[17:26:51.684][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-3] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:26:51.685][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-3] ==> Parameters: 0(Integer)
+[17:26:51.724][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-3] <==      Total: 5
+[17:27:20.282][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[17:27:20.282][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] ==> Parameters: storm(String)
+[17:27:20.319][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] <==      Total: 1
+[17:27:20.391][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
+[17:27:20.392][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] ==> Parameters: storm(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
+[17:27:20.428][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] <==      Total: 0
+[17:27:24.092][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[17:27:24.093][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] ==> Parameters: storm(String)
+[17:27:24.128][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-6] <==      Total: 1
+[17:27:24.201][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-6] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
+[17:27:24.202][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-6] ==> Parameters: storm(String), 849C829D658BAAEFF512D766B0DB3CCE(String)
+[17:27:24.240][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-6] <==      Total: 1
+[17:27:27.140][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-7] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:27:27.140][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-7] ==> Parameters: 0(Integer)
+[17:27:27.178][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-7] <==      Total: 5
+[17:28:01.344][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-4] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:28:01.344][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-4] ==> Parameters: 0(Integer)
+[17:28:01.385][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-4] <==      Total: 5
+[17:31:51.454][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-7] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:31:51.454][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-7] ==> Parameters: 0(Integer)
+[17:31:51.492][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-7] <==      Total: 5
+[17:31:59.988][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:31:59.989][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 0(Integer)
+[17:32:00.027][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 5
+[17:32:02.631][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-4] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:02.631][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-4] ==> Parameters: 0(Integer)
+[17:32:02.668][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-4] <==      Total: 5
+[17:32:18.918][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-9] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:18.919][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-9] ==> Parameters: 0(Integer)
+[17:32:18.956][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-9] <==      Total: 5
+[17:32:50.088][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:50.089][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 0(Integer)
+[17:32:50.127][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 0
+[17:32:50.201][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:50.201][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 0(Integer)
+[17:32:50.239][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 5
+[17:32:50.310][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:50.311][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100001(Integer)
+[17:32:50.347][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:50.420][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:50.420][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100001(Integer)
+[17:32:50.456][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 5
+[17:32:50.529][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:50.529][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100006(Integer)
+[17:32:50.565][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:50.637][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:50.637][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100006(Integer)
+[17:32:50.673][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:50.746][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:50.746][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100007(Integer)
+[17:32:50.783][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:50.854][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:50.855][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100007(Integer)
+[17:32:50.891][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:50.963][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:50.963][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100008(Integer)
+[17:32:51.000][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:51.071][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:51.072][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100008(Integer)
+[17:32:51.108][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:51.180][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:51.180][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100009(Integer)
+[17:32:51.216][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:51.289][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:51.289][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100009(Integer)
+[17:32:51.326][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:51.399][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:51.399][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100010(Integer)
+[17:32:51.435][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:51.508][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:51.508][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100010(Integer)
+[17:32:51.545][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:51.617][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:51.618][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100002(Integer)
+[17:32:51.654][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:51.726][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:51.726][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100002(Integer)
+[17:32:51.762][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 5
+[17:32:51.834][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:51.834][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100011(Integer)
+[17:32:51.871][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:51.943][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:51.943][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100011(Integer)
+[17:32:51.979][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:52.051][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:52.051][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100012(Integer)
+[17:32:52.087][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:52.160][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:52.160][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100012(Integer)
+[17:32:52.196][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:52.268][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:52.269][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100013(Integer)
+[17:32:52.305][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:52.377][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:52.378][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100013(Integer)
+[17:32:52.415][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:52.487][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:52.487][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100014(Integer)
+[17:32:52.523][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:52.596][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:52.596][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100014(Integer)
+[17:32:52.632][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:52.704][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:52.704][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100015(Integer)
+[17:32:52.741][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:52.813][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:52.813][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100015(Integer)
+[17:32:52.849][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:52.922][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:52.922][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100003(Integer)
+[17:32:52.958][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:53.030][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:53.031][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100003(Integer)
+[17:32:53.068][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 5
+[17:32:53.140][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:53.140][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100016(Integer)
+[17:32:53.177][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:53.249][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:53.249][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100016(Integer)
+[17:32:53.285][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:53.357][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:53.357][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100017(Integer)
+[17:32:53.630][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:53.703][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:53.703][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100017(Integer)
+[17:32:53.739][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:53.811][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:53.811][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100018(Integer)
+[17:32:53.847][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:53.919][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:53.919][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100018(Integer)
+[17:32:53.956][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:54.264][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:54.264][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100019(Integer)
+[17:32:54.301][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:54.373][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:54.373][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100019(Integer)
+[17:32:54.409][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:54.481][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:54.481][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100020(Integer)
+[17:32:54.517][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:54.589][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:54.589][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100020(Integer)
+[17:32:54.626][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:54.697][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:54.698][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100004(Integer)
+[17:32:54.735][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:54.806][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:54.807][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100004(Integer)
+[17:32:54.842][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 5
+[17:32:54.915][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:54.916][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100021(Integer)
+[17:32:54.951][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:55.260][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:55.260][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100021(Integer)
+[17:32:55.295][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:55.369][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:55.369][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100022(Integer)
+[17:32:55.405][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:55.477][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:55.477][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100022(Integer)
+[17:32:55.513][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:55.585][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:55.585][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100023(Integer)
+[17:32:55.622][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:55.694][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:55.694][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100023(Integer)
+[17:32:55.730][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:55.801][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:55.802][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100024(Integer)
+[17:32:55.838][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:55.910][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:55.910][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100024(Integer)
+[17:32:55.947][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:56.019][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:56.019][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100025(Integer)
+[17:32:56.055][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:56.128][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:56.128][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100025(Integer)
+[17:32:56.163][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:56.236][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:56.236][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100005(Integer)
+[17:32:56.272][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:56.344][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:56.345][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100005(Integer)
+[17:32:56.381][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 5
+[17:32:56.453][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:56.453][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100026(Integer)
+[17:32:56.490][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:56.561][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:56.561][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100026(Integer)
+[17:32:56.597][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:56.669][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:56.669][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100027(Integer)
+[17:32:56.706][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:56.777][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:56.777][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100027(Integer)
+[17:32:56.813][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:56.886][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:56.886][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100028(Integer)
+[17:32:56.922][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:56.994][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:56.994][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100028(Integer)
+[17:32:57.030][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:57.102][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:57.102][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100029(Integer)
+[17:32:57.138][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:57.209][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:57.209][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100029(Integer)
+[17:32:57.246][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:32:57.317][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:32:57.318][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100030(Integer)
+[17:32:57.354][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:32:57.426][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:32:57.426][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100030(Integer)
+[17:32:57.462][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:33:06.144][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:06.144][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 0(Integer)
+[17:33:06.180][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 0
+[17:33:06.251][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:06.252][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 0(Integer)
+[17:33:06.289][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 5
+[17:33:06.361][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:06.361][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100001(Integer)
+[17:33:06.397][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:06.468][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:06.469][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100001(Integer)
+[17:33:06.505][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 5
+[17:33:06.577][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:06.577][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100006(Integer)
+[17:33:06.613][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:06.685][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:06.685][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100006(Integer)
+[17:33:06.721][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:06.794][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:06.794][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100007(Integer)
+[17:33:06.830][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:06.902][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:06.902][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100007(Integer)
+[17:33:06.938][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:07.009][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:07.010][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100008(Integer)
+[17:33:07.047][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:07.118][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:07.118][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100008(Integer)
+[17:33:07.154][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:07.226][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:07.226][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100009(Integer)
+[17:33:07.263][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:07.335][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:07.335][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100009(Integer)
+[17:33:07.370][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:07.443][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:07.443][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100010(Integer)
+[17:33:07.479][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:07.551][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:07.551][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100010(Integer)
+[17:33:07.587][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:07.661][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:07.662][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100002(Integer)
+[17:33:07.698][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:07.769][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:07.769][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100002(Integer)
+[17:33:07.806][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 5
+[17:33:07.879][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:07.879][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100011(Integer)
+[17:33:07.915][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:07.987][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:07.988][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100011(Integer)
+[17:33:08.024][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:08.095][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:08.095][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100012(Integer)
+[17:33:08.132][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:08.203][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:08.203][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100012(Integer)
+[17:33:08.240][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:08.311][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:08.311][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100013(Integer)
+[17:33:08.347][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:08.419][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:08.419][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100013(Integer)
+[17:33:08.455][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:08.527][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:08.527][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100014(Integer)
+[17:33:08.563][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:08.635][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:08.635][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100014(Integer)
+[17:33:08.672][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:08.743][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:08.744][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100015(Integer)
+[17:33:08.779][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:08.851][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:08.851][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100015(Integer)
+[17:33:08.888][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:08.961][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:08.961][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100003(Integer)
+[17:33:08.998][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:09.071][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:09.071][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100003(Integer)
+[17:33:09.108][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 5
+[17:33:09.179][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:09.179][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100016(Integer)
+[17:33:09.215][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:09.286][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:09.287][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100016(Integer)
+[17:33:09.322][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:09.394][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:09.394][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100017(Integer)
+[17:33:09.430][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:09.502][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:09.502][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100017(Integer)
+[17:33:09.538][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:09.609][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:09.609][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100018(Integer)
+[17:33:09.646][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:09.716][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:09.717][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100018(Integer)
+[17:33:09.753][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:09.825][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:09.825][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100019(Integer)
+[17:33:09.862][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:09.933][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:09.933][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100019(Integer)
+[17:33:09.973][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:10.045][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:10.045][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100020(Integer)
+[17:33:10.081][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:10.153][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:10.153][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100020(Integer)
+[17:33:10.189][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:10.260][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:10.261][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100004(Integer)
+[17:33:10.297][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:10.368][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:10.368][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100004(Integer)
+[17:33:10.405][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 5
+[17:33:10.476][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:10.477][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100021(Integer)
+[17:33:10.513][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:10.584][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:10.585][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100021(Integer)
+[17:33:10.623][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:10.694][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:10.694][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100022(Integer)
+[17:33:10.730][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:10.802][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:10.802][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100022(Integer)
+[17:33:10.838][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:10.909][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:10.909][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100023(Integer)
+[17:33:10.945][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:11.017][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:11.017][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100023(Integer)
+[17:33:11.052][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:11.124][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:11.124][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100024(Integer)
+[17:33:11.160][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:11.231][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:11.231][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100024(Integer)
+[17:33:11.267][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:11.340][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:11.340][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100025(Integer)
+[17:33:11.377][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:11.448][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:11.448][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100025(Integer)
+[17:33:11.485][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:11.558][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:11.558][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100005(Integer)
+[17:33:11.594][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:11.666][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:11.666][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100005(Integer)
+[17:33:11.703][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 5
+[17:33:11.775][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:11.775][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100026(Integer)
+[17:33:11.812][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:11.883][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:11.883][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100026(Integer)
+[17:33:11.919][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:11.990][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:11.991][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100027(Integer)
+[17:33:12.027][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:12.098][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:12.099][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100027(Integer)
+[17:33:12.135][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:12.206][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:12.206][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100028(Integer)
+[17:33:12.242][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:12.314][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:12.314][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100028(Integer)
+[17:33:12.350][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:12.422][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:12.422][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100029(Integer)
+[17:33:12.459][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:12.530][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:12.530][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100029(Integer)
+[17:33:12.566][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:33:12.637][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:33:12.637][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 100030(Integer)
+[17:33:12.673][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:33:12.746][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:33:12.746][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] ==> Parameters: 100030(Integer)
+[17:33:12.782][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-5] <==      Total: 0
+[17:35:29.982][DEBUG][com.mmall.dao.CategoryMapper.insert][http-apr-8080-exec-8] ==>  Preparing: insert into mmall_category (id, parent_id, name, status, sort_order, create_time, update_time) values (?, ?, ?, ?, ?, now(), now()) 
+[17:35:29.983][DEBUG][com.mmall.dao.CategoryMapper.insert][http-apr-8080-exec-8] ==> Parameters: null, 100001(Integer), 增加的节点(String), true(Boolean), null
+[17:35:30.020][DEBUG][com.mmall.dao.CategoryMapper.insert][http-apr-8080-exec-8] <==    Updates: 1
+[17:35:47.370][DEBUG][com.mmall.dao.CategoryMapper.insert][http-apr-8080-exec-10] ==>  Preparing: insert into mmall_category (id, parent_id, name, status, sort_order, create_time, update_time) values (?, ?, ?, ?, ?, now(), now()) 
+[17:35:47.370][DEBUG][com.mmall.dao.CategoryMapper.insert][http-apr-8080-exec-10] ==> Parameters: null, 100001(Integer), 增加的节点(String), true(Boolean), null
+[17:35:47.408][DEBUG][com.mmall.dao.CategoryMapper.insert][http-apr-8080-exec-10] <==    Updates: 1
+[17:36:34.270][DEBUG][com.mmall.dao.CategoryMapper.insert][http-apr-8080-exec-7] ==>  Preparing: insert into mmall_category (id, parent_id, name, status, sort_order, create_time, update_time) values (?, ?, ?, ?, ?, now(), now()) 
+[17:36:34.270][DEBUG][com.mmall.dao.CategoryMapper.insert][http-apr-8080-exec-7] ==> Parameters: null, 100001(Integer), 增加的节点(String), true(Boolean), null
+[17:36:34.308][DEBUG][com.mmall.dao.CategoryMapper.insert][http-apr-8080-exec-7] <==    Updates: 1
+[17:37:34.117][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-apr-8080-exec-5] ==>  Preparing: update mmall_category SET name = ? where id = ? 
+[17:37:34.118][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-apr-8080-exec-5] ==> Parameters: 增加的节点(String), 100001(Integer)
+[17:37:34.154][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-apr-8080-exec-5] <==    Updates: 1
+[17:37:38.810][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-apr-8080-exec-8] ==>  Preparing: update mmall_category SET name = ? where id = ? 
+[17:37:38.810][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-apr-8080-exec-8] ==> Parameters: 增加的节点1(String), 100001(Integer)
+[17:37:38.847][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-apr-8080-exec-8] <==    Updates: 1
+[17:38:32.479][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-apr-8080-exec-10] ==>  Preparing: update mmall_category SET name = ? where id = ? 
+[17:38:32.479][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-apr-8080-exec-10] ==> Parameters: 家用电器(String), 100001(Integer)
+[17:38:32.516][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-apr-8080-exec-10] <==    Updates: 1
+[17:38:46.123][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-apr-8080-exec-3] ==>  Preparing: update mmall_category SET name = ? where id = ? 
+[17:38:46.123][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-apr-8080-exec-3] ==> Parameters: 家用电器(String), 100033(Integer)
+[17:38:46.162][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-apr-8080-exec-3] <==    Updates: 1
+[17:38:59.399][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-apr-8080-exec-7] ==>  Preparing: update mmall_category SET name = ? where id = ? 
+[17:38:59.399][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-apr-8080-exec-7] ==> Parameters: 更改名称(String), 100033(Integer)
+[17:38:59.436][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-apr-8080-exec-7] <==    Updates: 1
+[17:40:25.937][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:40:25.937][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100001(Integer)
+[17:40:25.974][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:40:26.046][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:40:26.046][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100001(Integer)
+[17:40:26.082][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 8
+[17:40:26.154][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:40:26.154][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100006(Integer)
+[17:40:26.191][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:40:26.261][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:40:26.261][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100006(Integer)
+[17:40:26.297][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:40:26.369][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:40:26.370][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100007(Integer)
+[17:40:26.406][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:40:26.477][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:40:26.477][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100007(Integer)
+[17:40:26.513][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:40:26.585][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:40:26.585][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100008(Integer)
+[17:40:26.624][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:40:26.695][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:40:26.696][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100008(Integer)
+[17:40:26.731][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:40:26.803][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:40:26.803][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100009(Integer)
+[17:40:26.839][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:40:26.911][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:40:26.911][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100009(Integer)
+[17:40:26.948][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:40:27.019][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:40:27.019][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100010(Integer)
+[17:40:27.055][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:40:27.127][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:40:27.127][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100010(Integer)
+[17:40:27.163][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:40:27.234][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:40:27.234][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100031(Integer)
+[17:40:27.270][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:40:27.341][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:40:27.341][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100031(Integer)
+[17:40:27.377][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:40:27.450][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:40:27.450][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100032(Integer)
+[17:40:27.486][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:40:27.558][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:40:27.558][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100032(Integer)
+[17:40:27.594][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:40:27.666][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:40:27.667][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 100033(Integer)
+[17:40:27.703][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:40:27.774][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:40:27.774][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] ==> Parameters: 100033(Integer)
+[17:40:27.810][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-2] <==      Total: 0
+[17:40:38.674][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-6] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[17:40:38.674][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-6] ==> Parameters: 100033(Integer)
+[17:40:38.710][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-6] <==      Total: 1
+[17:40:38.782][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-6] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[17:40:38.782][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-6] ==> Parameters: 100033(Integer)
+[17:40:38.818][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-apr-8080-exec-6] <==      Total: 0
