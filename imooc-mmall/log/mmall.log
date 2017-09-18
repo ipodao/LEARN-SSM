@@ -1,172 +1,258 @@
-[21:59:15.963][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-8] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[21:59:16.011][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-8] ==> Parameters: storm(String)
-[21:59:16.315][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-8] <==      Total: 1
-[21:59:16.412][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-8] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[21:59:16.413][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-8] ==> Parameters: storm(String), 849C829D658BAAEFF512D766B0DB3CCE(String)
-[21:59:16.463][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-8] <==      Total: 1
-[21:59:27.953][INFO][com.mmall.service.impl.FileServiceImpl][http-apr-8080-exec-1] 开始上传文件,上传文件的文件名:48f6edd42b66a87b29612a0a5d4fad17.jpg,上传的路径:D:\SQL\TomCat\apache-tomcat-7.0.72\webapps\mmall\upload,新文件名:1c6c33bd-d9cd-440a-b249-fa8d4adddda7.jpg
-[21:59:28.002][INFO][com.mmall.util.FTPUtil][http-apr-8080-exec-1] 开始连接ftp服务器
-[21:59:31.957][INFO][com.mmall.util.FTPUtil][http-apr-8080-exec-1] 开始连接ftp服务器,结束上传,上传结果:{}
-[22:14:03.144][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[22:14:03.179][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] ==> Parameters: storm(String)
-[22:14:03.240][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] <==      Total: 1
-[22:14:03.336][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[22:14:03.336][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] ==> Parameters: storm(String), 849C829D658BAAEFF512D766B0DB3CCE(String)
-[22:14:03.386][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] <==      Total: 1
-[22:14:26.569][DEBUG][c.m.dao.ProductMapper.selectList_COUNT][http-apr-8080-exec-6] ==>  Preparing: SELECT count(*) FROM mmall_product 
-[22:14:26.570][DEBUG][c.m.dao.ProductMapper.selectList_COUNT][http-apr-8080-exec-6] ==> Parameters: 
-[22:14:26.613][DEBUG][c.m.dao.ProductMapper.selectList_COUNT][http-apr-8080-exec-6] <==      Total: 1
-[22:14:26.614][DEBUG][com.mmall.dao.ProductMapper.selectList][http-apr-8080-exec-6] ==>  Preparing: SELECT id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product ORDER BY id asc limit ?,? 
-[22:14:26.614][DEBUG][com.mmall.dao.ProductMapper.selectList][http-apr-8080-exec-6] ==> Parameters: 0(Integer), 10(Integer)
-[22:14:26.663][DEBUG][com.mmall.dao.ProductMapper.selectList][http-apr-8080-exec-6] <==      Total: 4
-[22:14:44.916][DEBUG][c.m.dao.ProductMapper.selectList_COUNT][http-apr-8080-exec-8] ==>  Preparing: SELECT count(*) FROM mmall_product 
-[22:14:44.917][DEBUG][c.m.dao.ProductMapper.selectList_COUNT][http-apr-8080-exec-8] ==> Parameters: 
-[22:14:44.959][DEBUG][c.m.dao.ProductMapper.selectList_COUNT][http-apr-8080-exec-8] <==      Total: 1
-[22:14:44.959][DEBUG][com.mmall.dao.ProductMapper.selectList][http-apr-8080-exec-8] ==>  Preparing: SELECT id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product ORDER BY id asc limit ?,? 
-[22:14:44.959][DEBUG][com.mmall.dao.ProductMapper.selectList][http-apr-8080-exec-8] ==> Parameters: 0(Integer), 10(Integer)
-[22:14:45.004][DEBUG][com.mmall.dao.ProductMapper.selectList][http-apr-8080-exec-8] <==      Total: 4
-[22:15:48.909][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-10] ==>  Preparing: SELECT count(*) FROM mmall_product WHERE name LIKE ? 
-[22:15:48.910][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-10] ==> Parameters: %美的%(String)
-[22:15:48.956][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-10] <==      Total: 1
-[22:15:48.959][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-10] ==>  Preparing: SELECT id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product WHERE name like ? limit ?,? 
-[22:15:48.960][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-10] ==> Parameters: %美的%(String), 0(Integer), 10(Integer)
-[22:15:49.004][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-10] <==      Total: 1
-[22:16:12.353][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-3] ==>  Preparing: SELECT count(*) FROM mmall_product WHERE name LIKE ? AND id = ? 
-[22:16:12.353][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-3] ==> Parameters: %美的%(String), 27(Integer)
-[22:16:12.396][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-3] <==      Total: 1
-[22:16:12.397][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-3] ==>  Preparing: SELECT id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product WHERE name like ? and id = ? limit ?,? 
-[22:16:12.398][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-3] ==> Parameters: %美的%(String), 27(Integer), 0(Integer), 10(Integer)
-[22:16:12.441][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-3] <==      Total: 1
-[22:16:45.248][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-4] ==>  Preparing: SELECT count(*) FROM mmall_product WHERE id = ? 
-[22:16:45.248][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-4] ==> Parameters: 27(Integer)
-[22:16:45.290][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-4] <==      Total: 1
-[22:16:45.291][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-4] ==>  Preparing: SELECT id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product WHERE id = ? limit ?,? 
-[22:16:45.292][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-4] ==> Parameters: 27(Integer), 0(Integer), 10(Integer)
-[22:16:45.335][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-4] <==      Total: 1
-[22:16:50.545][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-7] ==>  Preparing: SELECT count(*) FROM mmall_product WHERE id = ? 
-[22:16:50.546][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-7] ==> Parameters: 25(Integer)
-[22:16:50.588][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-7] <==      Total: 1
-[22:17:06.639][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-6] ==>  Preparing: SELECT count(*) FROM mmall_product WHERE id = ? 
-[22:17:06.639][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-6] ==> Parameters: 28(Integer)
-[22:17:06.681][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-6] <==      Total: 1
-[22:17:06.683][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-6] ==>  Preparing: SELECT id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product WHERE id = ? limit ?,? 
-[22:17:06.683][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-6] ==> Parameters: 28(Integer), 0(Integer), 10(Integer)
-[22:17:06.727][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-6] <==      Total: 1
-[22:17:13.547][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-8] ==>  Preparing: SELECT count(*) FROM mmall_product WHERE name LIKE ? AND id = ? 
-[22:17:13.549][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-8] ==> Parameters: %美的%(String), 28(Integer)
-[22:17:13.836][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-8] <==      Total: 1
-[22:17:18.668][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-9] ==>  Preparing: SELECT count(*) FROM mmall_product WHERE name LIKE ? AND id = ? 
-[22:17:18.669][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-9] ==> Parameters: %美的%(String), 27(Integer)
-[22:17:18.711][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-9] <==      Total: 1
-[22:17:18.713][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-9] ==>  Preparing: SELECT id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product WHERE name like ? and id = ? limit ?,? 
-[22:17:18.713][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-9] ==> Parameters: %美的%(String), 27(Integer), 0(Integer), 10(Integer)
-[22:17:18.758][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-9] <==      Total: 1
-[22:18:38.433][INFO][com.mmall.service.impl.FileServiceImpl][http-apr-8080-exec-1] 开始上传文件,上传文件的文件名:48f6edd42b66a87b29612a0a5d4fad17.jpg,上传的路径:D:\SQL\TomCat\apache-tomcat-7.0.72\webapps\mmall\upload,新文件名:1691b599-6d99-4e46-a62a-e51be102f14d.jpg
-[22:18:38.462][INFO][com.mmall.util.FTPUtil][http-apr-8080-exec-1] 开始连接ftp服务器
-[22:18:42.001][INFO][com.mmall.util.FTPUtil][http-apr-8080-exec-1] 开始连接ftp服务器,结束上传,上传结果:{}
-[22:19:31.897][INFO][com.mmall.service.impl.FileServiceImpl][http-apr-8080-exec-4] 开始上传文件,上传文件的文件名:48f6edd42b66a87b29612a0a5d4fad17.jpg,上传的路径:D:\SQL\TomCat\apache-tomcat-7.0.72\webapps\mmall\upload,新文件名:8ae64003-725f-490d-a0b2-7fe287a7a7b6.jpg
-[22:19:31.907][INFO][com.mmall.util.FTPUtil][http-apr-8080-exec-4] 开始连接ftp服务器
-[22:19:35.583][INFO][com.mmall.util.FTPUtil][http-apr-8080-exec-4] 开始连接ftp服务器,结束上传,上传结果:{}
-[22:20:03.460][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-6] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
-[22:20:03.461][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-6] ==> Parameters: 27(Integer)
-[22:20:03.505][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-6] <==      Total: 1
-[22:20:03.589][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-6] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
-[22:20:03.589][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-6] ==> Parameters: 100006(Integer)
-[22:20:03.633][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-6] <==      Total: 1
-[22:20:40.290][DEBUG][c.m.d.P.updateByPrimaryKeySelective][http-apr-8080-exec-10] ==>  Preparing: update mmall_product SET status = ? where id = ? 
-[22:20:40.290][DEBUG][c.m.d.P.updateByPrimaryKeySelective][http-apr-8080-exec-10] ==> Parameters: 1(Integer), 27(Integer)
-[22:20:40.334][DEBUG][c.m.d.P.updateByPrimaryKeySelective][http-apr-8080-exec-10] <==    Updates: 1
-[22:20:48.968][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-1] ==>  Preparing: SELECT count(*) FROM mmall_product WHERE name LIKE ? AND id = ? 
-[22:20:48.968][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-1] ==> Parameters: %美的%(String), 27(Integer)
-[22:20:49.010][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-1] <==      Total: 1
-[22:20:49.011][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-1] ==>  Preparing: SELECT id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product WHERE name like ? and id = ? limit ?,? 
-[22:20:49.012][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-1] ==> Parameters: %美的%(String), 27(Integer), 0(Integer), 10(Integer)
-[22:20:49.055][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-1] <==      Total: 1
-[22:20:54.451][DEBUG][c.m.d.P.updateByPrimaryKeySelective][http-apr-8080-exec-2] ==>  Preparing: update mmall_product SET status = ? where id = ? 
-[22:20:54.452][DEBUG][c.m.d.P.updateByPrimaryKeySelective][http-apr-8080-exec-2] ==> Parameters: 0(Integer), 27(Integer)
-[22:20:54.502][DEBUG][c.m.d.P.updateByPrimaryKeySelective][http-apr-8080-exec-2] <==    Updates: 1
-[22:20:58.415][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-5] ==>  Preparing: SELECT count(*) FROM mmall_product WHERE name LIKE ? AND id = ? 
-[22:20:58.415][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-5] ==> Parameters: %美的%(String), 27(Integer)
-[22:20:58.457][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-5] <==      Total: 1
-[22:20:58.458][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-5] ==>  Preparing: SELECT id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product WHERE name like ? and id = ? limit ?,? 
-[22:20:58.459][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-5] ==> Parameters: %美的%(String), 27(Integer), 0(Integer), 10(Integer)
-[22:20:58.503][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-5] <==      Total: 1
-[22:21:01.887][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-4] ==>  Preparing: SELECT count(*) FROM mmall_product WHERE name LIKE ? AND id = ? 
-[22:21:01.888][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-4] ==> Parameters: %美的%(String), 27(Integer)
-[22:21:01.930][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-4] <==      Total: 1
-[22:21:01.933][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-4] ==>  Preparing: SELECT id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product WHERE name like ? and id = ? limit ?,? 
-[22:21:01.934][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-4] ==> Parameters: %美的%(String), 27(Integer), 0(Integer), 10(Integer)
-[22:21:01.977][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-4] <==      Total: 1
-[22:21:18.976][DEBUG][c.m.d.P.updateByPrimaryKeySelective][http-apr-8080-exec-7] ==>  Preparing: update mmall_product SET status = ? where id = ? 
-[22:21:18.977][DEBUG][c.m.d.P.updateByPrimaryKeySelective][http-apr-8080-exec-7] ==> Parameters: 2(Integer), 27(Integer)
-[22:21:19.020][DEBUG][c.m.d.P.updateByPrimaryKeySelective][http-apr-8080-exec-7] <==    Updates: 1
-[22:21:21.333][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-8] ==>  Preparing: SELECT count(*) FROM mmall_product WHERE name LIKE ? AND id = ? 
-[22:21:21.334][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-8] ==> Parameters: %美的%(String), 27(Integer)
-[22:21:21.376][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-8] <==      Total: 1
-[22:21:21.376][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-8] ==>  Preparing: SELECT id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product WHERE name like ? and id = ? limit ?,? 
-[22:21:21.377][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-8] ==> Parameters: %美的%(String), 27(Integer), 0(Integer), 10(Integer)
-[22:21:21.421][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-8] <==      Total: 1
-[22:21:29.962][DEBUG][c.m.d.P.updateByPrimaryKeySelective][http-apr-8080-exec-6] ==>  Preparing: update mmall_product SET status = ? where id = ? 
-[22:21:29.962][DEBUG][c.m.d.P.updateByPrimaryKeySelective][http-apr-8080-exec-6] ==> Parameters: 2(Integer), 27(Integer)
-[22:21:30.006][DEBUG][c.m.d.P.updateByPrimaryKeySelective][http-apr-8080-exec-6] <==    Updates: 1
-[22:21:33.425][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-9] ==>  Preparing: SELECT count(*) FROM mmall_product WHERE name LIKE ? AND id = ? 
-[22:21:33.425][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-9] ==> Parameters: %美的%(String), 27(Integer)
-[22:21:33.467][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-9] <==      Total: 1
-[22:21:33.468][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-9] ==>  Preparing: SELECT id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product WHERE name like ? and id = ? limit ?,? 
-[22:21:33.469][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-9] ==> Parameters: %美的%(String), 27(Integer), 0(Integer), 10(Integer)
-[22:21:33.512][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-9] <==      Total: 1
-[22:21:40.498][DEBUG][c.m.d.P.updateByPrimaryKeySelective][http-apr-8080-exec-10] ==>  Preparing: update mmall_product SET status = ? where id = ? 
-[22:21:40.498][DEBUG][c.m.d.P.updateByPrimaryKeySelective][http-apr-8080-exec-10] ==> Parameters: 3(Integer), 27(Integer)
-[22:21:40.542][DEBUG][c.m.d.P.updateByPrimaryKeySelective][http-apr-8080-exec-10] <==    Updates: 1
-[22:21:43.101][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-3] ==>  Preparing: SELECT count(*) FROM mmall_product WHERE name LIKE ? AND id = ? 
-[22:21:43.102][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-3] ==> Parameters: %美的%(String), 27(Integer)
-[22:21:43.144][DEBUG][c.m.d.P.selectByNameAndProductId_COUNT][http-apr-8080-exec-3] <==      Total: 1
-[22:21:43.146][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-3] ==>  Preparing: SELECT id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product WHERE name like ? and id = ? limit ?,? 
-[22:21:43.146][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-3] ==> Parameters: %美的%(String), 27(Integer), 0(Integer), 10(Integer)
-[22:21:43.924][DEBUG][c.m.d.P.selectByNameAndProductId][http-apr-8080-exec-3] <==      Total: 1
-[22:21:58.622][DEBUG][c.m.d.P.updateByPrimaryKeySelective][http-apr-8080-exec-1] ==>  Preparing: update mmall_product SET status = ? where id = ? 
-[22:21:58.623][DEBUG][c.m.d.P.updateByPrimaryKeySelective][http-apr-8080-exec-1] ==> Parameters: 2(Integer), 27(Integer)
-[22:21:59.153][DEBUG][c.m.d.P.updateByPrimaryKeySelective][http-apr-8080-exec-1] <==    Updates: 1
-[22:22:38.264][DEBUG][com.mmall.dao.ProductMapper.insert][http-apr-8080-exec-5] ==>  Preparing: insert into mmall_product (id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, now(), now() ) 
-[22:22:38.264][DEBUG][com.mmall.dao.ProductMapper.insert][http-apr-8080-exec-5] ==> Parameters: null, null, null, null, null, null, null, null, null, null
-[22:23:20.350][DEBUG][c.m.dao.ProductMapper.updateByPrimaryKey][http-apr-8080-exec-8] ==>  Preparing: update mmall_product set category_id = ?, name = ?, subtitle = ?, main_image = ?, sub_images = ?, detail = ?, price = ?, stock = ?, status = ?, create_time = ?, update_time = now() where id = ? 
-[22:23:20.351][DEBUG][c.m.dao.ProductMapper.updateByPrimaryKey][http-apr-8080-exec-8] ==> Parameters: null, null, null, null, null, null, null, null, 2(Integer), null, 27(Integer)
-[22:25:29.999][DEBUG][com.mmall.dao.ProductMapper.insert][http-apr-8080-exec-2] ==>  Preparing: insert into mmall_product (id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, now(), now() ) 
-[22:25:30.000][DEBUG][com.mmall.dao.ProductMapper.insert][http-apr-8080-exec-2] ==> Parameters: null, 10001(Integer), sageg(String), sdgawe(String), null, null, dsfafsa(String), 1002(BigDecimal), 100(Integer), 1(Integer)
-[22:25:30.043][DEBUG][com.mmall.dao.ProductMapper.insert][http-apr-8080-exec-2] <==    Updates: 1
-[22:26:58.785][DEBUG][com.mmall.dao.ProductMapper.insert][http-apr-8080-exec-7] ==>  Preparing: insert into mmall_product (id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, now(), now() ) 
-[22:26:58.786][DEBUG][com.mmall.dao.ProductMapper.insert][http-apr-8080-exec-7] ==> Parameters: null, 10001(Integer), sageg(String), sdgawe(String), null, null, dsfafsa(String), 1002(BigDecimal), 100(Integer), 1(Integer)
-[22:26:58.830][DEBUG][com.mmall.dao.ProductMapper.insert][http-apr-8080-exec-7] <==    Updates: 1
-[22:27:30.572][DEBUG][c.m.dao.ProductMapper.updateByPrimaryKey][http-apr-8080-exec-9] ==>  Preparing: update mmall_product set category_id = ?, name = ?, subtitle = ?, main_image = ?, sub_images = ?, detail = ?, price = ?, stock = ?, status = ?, create_time = ?, update_time = now() where id = ? 
-[22:27:30.572][DEBUG][c.m.dao.ProductMapper.updateByPrimaryKey][http-apr-8080-exec-9] ==> Parameters: 10001(Integer), sageg(String), sdgawe(String), null, null, dsfafsa(String), 4050(BigDecimal), 100(Integer), 1(Integer), null, 31(Integer)
-[22:27:30.617][DEBUG][c.m.dao.ProductMapper.updateByPrimaryKey][http-apr-8080-exec-9] <==    Updates: 1
-[22:30:07.160][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-1] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
-[22:30:07.160][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-1] ==> Parameters: 10001(Integer)
-[22:30:07.203][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-1] <==      Total: 0
-[22:30:26.874][DEBUG][c.m.d.P.selectByNameAndCategoryIds_COUNT][http-apr-8080-exec-5] ==>  Preparing: SELECT count(*) FROM mmall_product WHERE status = 1 AND name LIKE ? 
-[22:30:26.875][DEBUG][c.m.d.P.selectByNameAndCategoryIds_COUNT][http-apr-8080-exec-5] ==> Parameters: %i%(String)
-[22:30:26.917][DEBUG][c.m.d.P.selectByNameAndCategoryIds_COUNT][http-apr-8080-exec-5] <==      Total: 1
-[22:30:26.918][DEBUG][c.m.d.P.selectByNameAndCategoryIds][http-apr-8080-exec-5] ==>  Preparing: SELECT id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where status = 1 and name like ? limit ?,? 
-[22:30:26.918][DEBUG][c.m.d.P.selectByNameAndCategoryIds][http-apr-8080-exec-5] ==> Parameters: %i%(String), 0(Integer), 10(Integer)
-[22:30:26.962][DEBUG][c.m.d.P.selectByNameAndCategoryIds][http-apr-8080-exec-5] <==      Total: 3
-[22:30:50.671][DEBUG][c.m.d.P.selectByNameAndCategoryIds_COUNT][http-apr-8080-exec-6] ==>  Preparing: SELECT count(*) FROM mmall_product WHERE status = 1 AND name LIKE ? 
-[22:30:50.672][DEBUG][c.m.d.P.selectByNameAndCategoryIds_COUNT][http-apr-8080-exec-6] ==> Parameters: %i%(String)
-[22:30:50.713][DEBUG][c.m.d.P.selectByNameAndCategoryIds_COUNT][http-apr-8080-exec-6] <==      Total: 1
-[22:30:50.714][DEBUG][c.m.d.P.selectByNameAndCategoryIds][http-apr-8080-exec-6] ==>  Preparing: SELECT id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where status = 1 and name like ? limit ?,? 
-[22:30:50.715][DEBUG][c.m.d.P.selectByNameAndCategoryIds][http-apr-8080-exec-6] ==> Parameters: %i%(String), 0(Integer), 10(Integer)
-[22:30:50.758][DEBUG][c.m.d.P.selectByNameAndCategoryIds][http-apr-8080-exec-6] <==      Total: 3
-[22:31:27.240][DEBUG][c.m.d.P.selectByNameAndCategoryIds_COUNT][http-apr-8080-exec-3] ==>  Preparing: SELECT count(*) FROM mmall_product WHERE status = 1 AND name LIKE ? 
-[22:31:27.240][DEBUG][c.m.d.P.selectByNameAndCategoryIds_COUNT][http-apr-8080-exec-3] ==> Parameters: %i%(String)
-[22:31:27.281][DEBUG][c.m.d.P.selectByNameAndCategoryIds_COUNT][http-apr-8080-exec-3] <==      Total: 1
-[22:31:27.282][DEBUG][c.m.d.P.selectByNameAndCategoryIds][http-apr-8080-exec-3] ==>  Preparing: SELECT id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where status = 1 and name like ? limit ?,? 
-[22:31:27.283][DEBUG][c.m.d.P.selectByNameAndCategoryIds][http-apr-8080-exec-3] ==> Parameters: %i%(String), 0(Integer), 10(Integer)
-[22:31:27.326][DEBUG][c.m.d.P.selectByNameAndCategoryIds][http-apr-8080-exec-3] <==      Total: 3
-[22:32:42.238][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
-[22:32:42.238][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==> Parameters: 27(Integer)
-[22:32:42.590][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-4] <==      Total: 1
-[22:32:51.081][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-7] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
-[22:32:51.082][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-7] ==> Parameters: 28(Integer)
-[22:32:51.125][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-7] <==      Total: 1
-[22:32:51.209][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-7] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
-[22:32:51.209][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-7] ==> Parameters: 100012(Integer)
-[22:32:51.251][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-apr-8080-exec-7] <==      Total: 1
+[17:01:35.616][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[17:01:35.679][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==> Parameters: storm(String)
+[17:01:35.733][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] <==      Total: 1
+[17:01:35.809][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
+[17:01:35.810][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] ==> Parameters: storm(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
+[17:01:35.844][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] <==      Total: 0
+[17:01:41.757][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[17:01:41.758][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] ==> Parameters: storm(String)
+[17:01:41.792][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] <==      Total: 1
+[17:01:41.859][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
+[17:01:41.859][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] ==> Parameters: storm(String), 849C829D658BAAEFF512D766B0DB3CCE(String)
+[17:01:41.903][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] <==      Total: 1
+[17:02:08.164][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-6] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? 
+[17:02:08.164][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-6] ==> Parameters: 22(Integer)
+[17:02:08.198][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-6] <==      Total: 0
+[17:02:08.281][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-6] ==>  Preparing: SELECT count(1) from mmall_cart where checked = 0 and user_id = ? 
+[17:02:08.281][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-6] ==> Parameters: 22(Integer)
+[17:02:08.314][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-6] <==      Total: 1
+[17:03:23.304][DEBUG][c.m.d.C.selectCartByUserIdProductId][http-apr-8080-exec-9] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? and product_id = ? 
+[17:03:23.305][DEBUG][c.m.d.C.selectCartByUserIdProductId][http-apr-8080-exec-9] ==> Parameters: 22(Integer), 30(Integer)
+[17:03:23.340][DEBUG][c.m.d.C.selectCartByUserIdProductId][http-apr-8080-exec-9] <==      Total: 0
+[17:03:23.646][DEBUG][com.mmall.dao.CartMapper.insert][http-apr-8080-exec-9] ==>  Preparing: insert into mmall_cart (id, user_id, product_id, quantity, checked, create_time, update_time) values (?, ?, ?, ?, ?, now(), now()) 
+[17:03:23.647][DEBUG][com.mmall.dao.CartMapper.insert][http-apr-8080-exec-9] ==> Parameters: null, 22(Integer), 30(Integer), 1(Integer), 1(Integer)
+[17:03:23.688][DEBUG][com.mmall.dao.CartMapper.insert][http-apr-8080-exec-9] <==    Updates: 1
+[17:03:23.754][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-9] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? 
+[17:03:23.755][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-9] ==> Parameters: 22(Integer)
+[17:03:23.789][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-9] <==      Total: 1
+[17:03:23.857][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-9] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:03:23.857][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-9] ==> Parameters: 30(Integer)
+[17:03:23.893][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-9] <==      Total: 1
+[17:03:23.961][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-9] ==>  Preparing: SELECT count(1) from mmall_cart where checked = 0 and user_id = ? 
+[17:03:23.962][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-9] ==> Parameters: 22(Integer)
+[17:03:23.995][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-9] <==      Total: 1
+[17:03:38.113][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-1] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? 
+[17:03:38.113][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-1] ==> Parameters: 22(Integer)
+[17:03:38.147][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-1] <==      Total: 1
+[17:03:38.213][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-1] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:03:38.213][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-1] ==> Parameters: 30(Integer)
+[17:03:38.246][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-1] <==      Total: 1
+[17:03:38.312][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-1] ==>  Preparing: SELECT count(1) from mmall_cart where checked = 0 and user_id = ? 
+[17:03:38.313][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-1] ==> Parameters: 22(Integer)
+[17:03:38.346][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-1] <==      Total: 1
+[17:03:58.028][DEBUG][c.m.d.C.selectCartByUserIdProductId][http-apr-8080-exec-3] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? and product_id = ? 
+[17:03:58.029][DEBUG][c.m.d.C.selectCartByUserIdProductId][http-apr-8080-exec-3] ==> Parameters: 22(Integer), 30(Integer)
+[17:03:58.062][DEBUG][c.m.d.C.selectCartByUserIdProductId][http-apr-8080-exec-3] <==      Total: 1
+[17:03:58.129][DEBUG][c.m.dao.CartMapper.updateByPrimaryKey][http-apr-8080-exec-3] ==>  Preparing: update mmall_cart set user_id = ?, product_id = ?, quantity = ?, checked = ?, create_time = ?, update_time = now() where id = ? 
+[17:03:58.131][DEBUG][c.m.dao.CartMapper.updateByPrimaryKey][http-apr-8080-exec-3] ==> Parameters: 22(Integer), 30(Integer), 2(Integer), 1(Integer), 2017-09-18 17:03:24.0(Timestamp), 127(Integer)
+[17:03:58.173][DEBUG][c.m.dao.CartMapper.updateByPrimaryKey][http-apr-8080-exec-3] <==    Updates: 1
+[17:03:58.241][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-3] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? 
+[17:03:58.241][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-3] ==> Parameters: 22(Integer)
+[17:03:58.274][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-3] <==      Total: 1
+[17:03:58.577][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:03:58.578][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==> Parameters: 30(Integer)
+[17:03:58.613][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-3] <==      Total: 1
+[17:03:58.679][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-3] ==>  Preparing: SELECT count(1) from mmall_cart where checked = 0 and user_id = ? 
+[17:03:58.680][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-3] ==> Parameters: 22(Integer)
+[17:03:58.713][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-3] <==      Total: 1
+[17:06:35.514][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-7] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? 
+[17:06:35.515][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-7] ==> Parameters: 22(Integer)
+[17:06:35.549][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-7] <==      Total: 1
+[17:06:35.615][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-7] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:06:35.615][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-7] ==> Parameters: 30(Integer)
+[17:06:35.649][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-7] <==      Total: 1
+[17:06:35.715][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-7] ==>  Preparing: SELECT count(1) from mmall_cart where checked = 0 and user_id = ? 
+[17:06:35.715][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-7] ==> Parameters: 22(Integer)
+[17:06:35.748][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-7] <==      Total: 1
+[17:07:51.672][DEBUG][c.m.d.C.selectCartByUserIdProductId][http-apr-8080-exec-4] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? and product_id = ? 
+[17:07:51.672][DEBUG][c.m.d.C.selectCartByUserIdProductId][http-apr-8080-exec-4] ==> Parameters: 22(Integer), 31(Integer)
+[17:07:51.705][DEBUG][c.m.d.C.selectCartByUserIdProductId][http-apr-8080-exec-4] <==      Total: 0
+[17:07:51.772][DEBUG][c.m.dao.CartMapper.updateByPrimaryKey][http-apr-8080-exec-4] ==>  Preparing: update mmall_cart set user_id = ?, product_id = ?, quantity = ?, checked = ?, create_time = ?, update_time = now() where id = ? 
+[17:07:51.773][DEBUG][c.m.dao.CartMapper.updateByPrimaryKey][http-apr-8080-exec-4] ==> Parameters: null, null, null, null, null, null
+[17:07:51.806][DEBUG][c.m.dao.CartMapper.updateByPrimaryKey][http-apr-8080-exec-4] <==    Updates: 0
+[17:07:51.875][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-4] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? 
+[17:07:51.876][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-4] ==> Parameters: 22(Integer)
+[17:07:51.909][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-4] <==      Total: 1
+[17:07:51.975][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:07:51.975][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==> Parameters: 30(Integer)
+[17:07:52.009][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-4] <==      Total: 1
+[17:07:52.075][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-4] ==>  Preparing: SELECT count(1) from mmall_cart where checked = 0 and user_id = ? 
+[17:07:52.075][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-4] ==> Parameters: 22(Integer)
+[17:07:52.109][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-4] <==      Total: 1
+[17:07:55.357][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-6] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? 
+[17:07:55.357][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-6] ==> Parameters: 22(Integer)
+[17:07:55.391][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-6] <==      Total: 1
+[17:07:55.457][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-6] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:07:55.457][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-6] ==> Parameters: 30(Integer)
+[17:07:55.491][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-6] <==      Total: 1
+[17:07:55.558][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-6] ==>  Preparing: SELECT count(1) from mmall_cart where checked = 0 and user_id = ? 
+[17:07:55.558][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-6] ==> Parameters: 22(Integer)
+[17:07:55.593][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-6] <==      Total: 1
+[17:07:58.248][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-8] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? 
+[17:07:58.249][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-8] ==> Parameters: 22(Integer)
+[17:07:58.282][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-8] <==      Total: 1
+[17:07:58.348][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-8] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:07:58.348][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-8] ==> Parameters: 30(Integer)
+[17:07:58.381][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-8] <==      Total: 1
+[17:07:58.448][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-8] ==>  Preparing: SELECT count(1) from mmall_cart where checked = 0 and user_id = ? 
+[17:07:58.448][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-8] ==> Parameters: 22(Integer)
+[17:07:58.716][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-8] <==      Total: 1
+[17:08:20.139][DEBUG][c.m.d.C.selectCartByUserIdProductId][http-apr-8080-exec-10] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? and product_id = ? 
+[17:08:20.139][DEBUG][c.m.d.C.selectCartByUserIdProductId][http-apr-8080-exec-10] ==> Parameters: 22(Integer), 31(Integer)
+[17:08:20.172][DEBUG][c.m.d.C.selectCartByUserIdProductId][http-apr-8080-exec-10] <==      Total: 0
+[17:08:20.238][DEBUG][com.mmall.dao.CartMapper.insert][http-apr-8080-exec-10] ==>  Preparing: insert into mmall_cart (id, user_id, product_id, quantity, checked, create_time, update_time) values (?, ?, ?, ?, ?, now(), now()) 
+[17:08:20.239][DEBUG][com.mmall.dao.CartMapper.insert][http-apr-8080-exec-10] ==> Parameters: null, 22(Integer), 31(Integer), 1(Integer), 1(Integer)
+[17:08:20.282][DEBUG][com.mmall.dao.CartMapper.insert][http-apr-8080-exec-10] <==    Updates: 1
+[17:08:20.348][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-10] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? 
+[17:08:20.348][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-10] ==> Parameters: 22(Integer)
+[17:08:20.382][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-10] <==      Total: 2
+[17:08:20.447][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-10] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:08:20.447][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-10] ==> Parameters: 30(Integer)
+[17:08:20.481][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-10] <==      Total: 1
+[17:08:20.547][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-10] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:08:20.548][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-10] ==> Parameters: 31(Integer)
+[17:08:20.582][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-10] <==      Total: 1
+[17:08:20.649][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-10] ==>  Preparing: SELECT count(1) from mmall_cart where checked = 0 and user_id = ? 
+[17:08:20.649][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-10] ==> Parameters: 22(Integer)
+[17:08:20.682][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-10] <==      Total: 1
+[17:08:25.906][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-1] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? 
+[17:08:25.906][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-1] ==> Parameters: 22(Integer)
+[17:08:25.940][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-1] <==      Total: 2
+[17:08:26.006][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-1] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:08:26.006][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-1] ==> Parameters: 30(Integer)
+[17:08:26.040][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-1] <==      Total: 1
+[17:08:26.107][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-1] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:08:26.108][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-1] ==> Parameters: 31(Integer)
+[17:08:26.141][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-1] <==      Total: 1
+[17:08:26.208][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-1] ==>  Preparing: SELECT count(1) from mmall_cart where checked = 0 and user_id = ? 
+[17:08:26.209][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-1] ==> Parameters: 22(Integer)
+[17:08:26.946][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-1] <==      Total: 1
+[17:09:04.537][DEBUG][c.m.d.C.checkedOrUncheckedProduct][http-apr-8080-exec-5] ==>  Preparing: UPDATE mmall_cart set checked = ?, update_time = now() where user_id = ? 
+[17:09:04.538][DEBUG][c.m.d.C.checkedOrUncheckedProduct][http-apr-8080-exec-5] ==> Parameters: 1(Integer), 22(Integer)
+[17:09:04.572][DEBUG][c.m.d.C.checkedOrUncheckedProduct][http-apr-8080-exec-5] <==    Updates: 2
+[17:09:04.638][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-5] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? 
+[17:09:04.638][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-5] ==> Parameters: 22(Integer)
+[17:09:04.671][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-5] <==      Total: 2
+[17:09:04.738][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:09:04.738][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 30(Integer)
+[17:09:04.772][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:09:04.839][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:09:04.839][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 31(Integer)
+[17:09:04.873][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[17:09:04.939][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-5] ==>  Preparing: SELECT count(1) from mmall_cart where checked = 0 and user_id = ? 
+[17:09:04.939][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-5] ==> Parameters: 22(Integer)
+[17:09:04.972][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-5] <==      Total: 1
+[17:09:16.822][DEBUG][c.m.d.C.checkedOrUncheckedProduct][http-apr-8080-exec-6] ==>  Preparing: UPDATE mmall_cart set checked = ?, update_time = now() where user_id = ? 
+[17:09:16.823][DEBUG][c.m.d.C.checkedOrUncheckedProduct][http-apr-8080-exec-6] ==> Parameters: 0(Integer), 22(Integer)
+[17:09:16.858][DEBUG][c.m.d.C.checkedOrUncheckedProduct][http-apr-8080-exec-6] <==    Updates: 2
+[17:09:16.925][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-6] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? 
+[17:09:16.925][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-6] ==> Parameters: 22(Integer)
+[17:09:16.959][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-6] <==      Total: 2
+[17:09:17.026][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-6] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:09:17.026][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-6] ==> Parameters: 30(Integer)
+[17:09:17.060][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-6] <==      Total: 1
+[17:09:17.126][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-6] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:09:17.126][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-6] ==> Parameters: 31(Integer)
+[17:09:17.159][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-6] <==      Total: 1
+[17:09:17.460][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-6] ==>  Preparing: SELECT count(1) from mmall_cart where checked = 0 and user_id = ? 
+[17:09:17.460][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-6] ==> Parameters: 22(Integer)
+[17:09:17.494][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-6] <==      Total: 1
+[17:09:47.313][DEBUG][c.m.d.C.checkedOrUncheckedProduct][http-apr-8080-exec-7] ==>  Preparing: UPDATE mmall_cart set checked = ?, update_time = now() where user_id = ? and product_id = ? 
+[17:09:47.313][DEBUG][c.m.d.C.checkedOrUncheckedProduct][http-apr-8080-exec-7] ==> Parameters: 1(Integer), 22(Integer), 30(Integer)
+[17:09:47.347][DEBUG][c.m.d.C.checkedOrUncheckedProduct][http-apr-8080-exec-7] <==    Updates: 1
+[17:09:47.413][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-7] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? 
+[17:09:47.413][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-7] ==> Parameters: 22(Integer)
+[17:09:47.447][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-7] <==      Total: 2
+[17:09:47.513][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-7] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:09:47.513][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-7] ==> Parameters: 30(Integer)
+[17:09:47.546][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-7] <==      Total: 1
+[17:09:47.847][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-7] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:09:47.848][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-7] ==> Parameters: 31(Integer)
+[17:09:47.882][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-7] <==      Total: 1
+[17:09:47.948][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-7] ==>  Preparing: SELECT count(1) from mmall_cart where checked = 0 and user_id = ? 
+[17:09:47.948][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-7] ==> Parameters: 22(Integer)
+[17:09:47.980][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-7] <==      Total: 1
+[17:10:01.377][DEBUG][c.m.d.C.checkedOrUncheckedProduct][http-apr-8080-exec-10] ==>  Preparing: UPDATE mmall_cart set checked = ?, update_time = now() where user_id = ? and product_id = ? 
+[17:10:01.378][DEBUG][c.m.d.C.checkedOrUncheckedProduct][http-apr-8080-exec-10] ==> Parameters: 1(Integer), 22(Integer), 30(Integer)
+[17:10:01.427][DEBUG][c.m.d.C.checkedOrUncheckedProduct][http-apr-8080-exec-10] <==    Updates: 1
+[17:10:01.493][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-10] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? 
+[17:10:01.494][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-10] ==> Parameters: 22(Integer)
+[17:10:01.527][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-10] <==      Total: 2
+[17:10:01.593][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-10] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:10:01.593][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-10] ==> Parameters: 30(Integer)
+[17:10:01.626][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-10] <==      Total: 1
+[17:10:01.692][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-10] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:10:01.692][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-10] ==> Parameters: 31(Integer)
+[17:10:01.726][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-10] <==      Total: 1
+[17:10:01.793][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-10] ==>  Preparing: SELECT count(1) from mmall_cart where checked = 0 and user_id = ? 
+[17:10:01.793][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-10] ==> Parameters: 22(Integer)
+[17:10:01.826][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-10] <==      Total: 1
+[17:10:17.444][DEBUG][c.m.d.C.checkedOrUncheckedProduct][http-apr-8080-exec-1] ==>  Preparing: UPDATE mmall_cart set checked = ?, update_time = now() where user_id = ? and product_id = ? 
+[17:10:17.444][DEBUG][c.m.d.C.checkedOrUncheckedProduct][http-apr-8080-exec-1] ==> Parameters: 0(Integer), 22(Integer), 30(Integer)
+[17:10:17.500][DEBUG][c.m.d.C.checkedOrUncheckedProduct][http-apr-8080-exec-1] <==    Updates: 1
+[17:10:17.567][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-1] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? 
+[17:10:17.568][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-1] ==> Parameters: 22(Integer)
+[17:10:17.601][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-1] <==      Total: 2
+[17:10:17.667][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-1] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:10:17.667][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-1] ==> Parameters: 30(Integer)
+[17:10:17.701][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-1] <==      Total: 1
+[17:10:18.002][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-1] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:10:18.002][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-1] ==> Parameters: 31(Integer)
+[17:10:18.036][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-1] <==      Total: 1
+[17:10:18.102][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-1] ==>  Preparing: SELECT count(1) from mmall_cart where checked = 0 and user_id = ? 
+[17:10:18.102][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-1] ==> Parameters: 22(Integer)
+[17:10:18.135][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-1] <==      Total: 1
+[17:10:28.245][DEBUG][c.m.d.C.checkedOrUncheckedProduct][http-apr-8080-exec-3] ==>  Preparing: UPDATE mmall_cart set checked = ?, update_time = now() where user_id = ? and product_id = ? 
+[17:10:28.245][DEBUG][c.m.d.C.checkedOrUncheckedProduct][http-apr-8080-exec-3] ==> Parameters: 0(Integer), 22(Integer), 30(Integer)
+[17:10:28.280][DEBUG][c.m.d.C.checkedOrUncheckedProduct][http-apr-8080-exec-3] <==    Updates: 1
+[17:10:28.586][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-3] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? 
+[17:10:28.586][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-3] ==> Parameters: 22(Integer)
+[17:10:28.619][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-3] <==      Total: 2
+[17:10:28.685][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:10:28.685][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==> Parameters: 30(Integer)
+[17:10:28.953][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-3] <==      Total: 1
+[17:10:29.019][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:10:29.020][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==> Parameters: 31(Integer)
+[17:10:29.053][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-3] <==      Total: 1
+[17:10:29.120][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-3] ==>  Preparing: SELECT count(1) from mmall_cart where checked = 0 and user_id = ? 
+[17:10:29.120][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-3] ==> Parameters: 22(Integer)
+[17:10:29.153][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-3] <==      Total: 1
+[17:10:55.927][DEBUG][c.m.d.CartMapper.selectCartProductCount][http-apr-8080-exec-4] ==>  Preparing: select IFNULL(sum(quantity),0) as count from mmall_cart where user_id = ? 
+[17:10:55.927][DEBUG][c.m.d.CartMapper.selectCartProductCount][http-apr-8080-exec-4] ==> Parameters: 22(Integer)
+[17:10:55.960][DEBUG][c.m.d.CartMapper.selectCartProductCount][http-apr-8080-exec-4] <==      Total: 1
+[17:17:40.252][DEBUG][c.m.d.C.deleteByUserIdProductIds][http-apr-8080-exec-10] ==>  Preparing: delete from mmall_cart where user_id = ? and product_id in ( ? , ? ) 
+[17:17:40.252][DEBUG][c.m.d.C.deleteByUserIdProductIds][http-apr-8080-exec-10] ==> Parameters: 22(Integer), 30(String), 31(String)
+[17:17:40.286][DEBUG][c.m.d.C.deleteByUserIdProductIds][http-apr-8080-exec-10] <==    Updates: 2
+[17:17:40.352][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-10] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? 
+[17:17:40.353][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-10] ==> Parameters: 22(Integer)
+[17:17:40.386][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-10] <==      Total: 0
+[17:17:40.691][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-10] ==>  Preparing: SELECT count(1) from mmall_cart where checked = 0 and user_id = ? 
+[17:17:40.691][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-10] ==> Parameters: 22(Integer)
+[17:17:40.725][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-10] <==      Total: 1
+[17:17:54.716][DEBUG][c.m.d.C.selectCartByUserIdProductId][http-apr-8080-exec-3] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? and product_id = ? 
+[17:17:54.717][DEBUG][c.m.d.C.selectCartByUserIdProductId][http-apr-8080-exec-3] ==> Parameters: 22(Integer), 30(Integer)
+[17:17:54.750][DEBUG][c.m.d.C.selectCartByUserIdProductId][http-apr-8080-exec-3] <==      Total: 0
+[17:17:54.817][DEBUG][com.mmall.dao.CartMapper.insert][http-apr-8080-exec-3] ==>  Preparing: insert into mmall_cart (id, user_id, product_id, quantity, checked, create_time, update_time) values (?, ?, ?, ?, ?, now(), now()) 
+[17:17:54.817][DEBUG][com.mmall.dao.CartMapper.insert][http-apr-8080-exec-3] ==> Parameters: null, 22(Integer), 30(Integer), 10000(Integer), 1(Integer)
+[17:17:54.862][DEBUG][com.mmall.dao.CartMapper.insert][http-apr-8080-exec-3] <==    Updates: 1
+[17:17:54.928][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-3] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? 
+[17:17:54.928][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-3] ==> Parameters: 22(Integer)
+[17:17:54.962][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-3] <==      Total: 1
+[17:17:55.027][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:17:55.028][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==> Parameters: 30(Integer)
+[17:17:55.062][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-3] <==      Total: 1
+[17:17:55.364][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-apr-8080-exec-3] ==>  Preparing: update mmall_cart SET quantity = ? where id = ? 
+[17:17:55.364][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-apr-8080-exec-3] ==> Parameters: 100(Integer), 129(Integer)
+[17:17:55.398][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-apr-8080-exec-3] <==    Updates: 1
+[17:17:55.464][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-3] ==>  Preparing: SELECT count(1) from mmall_cart where checked = 0 and user_id = ? 
+[17:17:55.464][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-3] ==> Parameters: 22(Integer)
+[17:17:55.498][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-3] <==      Total: 1
+[17:18:05.642][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-2] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? 
+[17:18:05.643][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-2] ==> Parameters: 22(Integer)
+[17:18:05.676][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-2] <==      Total: 1
+[17:18:05.743][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[17:18:05.743][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 30(Integer)
+[17:18:05.776][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[17:18:06.080][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-2] ==>  Preparing: SELECT count(1) from mmall_cart where checked = 0 and user_id = ? 
+[17:18:06.081][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-2] ==> Parameters: 22(Integer)
+[17:18:06.113][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-2] <==      Total: 1
