@@ -1,350 +1,261 @@
-[22:28:28.442][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-3] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[22:28:28.493][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-3] ==> Parameters: storm(String)
-[22:28:28.547][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-3] <==      Total: 1
-[22:28:28.630][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-3] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[22:28:28.630][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-3] ==> Parameters: storm(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
-[22:28:28.670][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-3] <==      Total: 0
-[22:28:38.767][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[22:28:38.768][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==> Parameters: storm(String)
-[22:28:38.806][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] <==      Total: 1
-[22:28:38.881][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-5] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[22:28:38.881][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-5] ==> Parameters: storm(String), 849C829D658BAAEFF512D766B0DB3CCE(String)
-[22:28:38.929][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-5] <==      Total: 1
-[22:32:28.174][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[22:32:28.175][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[22:32:28.207][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] ==> Parameters: storm(String)
-[22:32:28.208][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] ==> Parameters: storm(String)
-[22:32:28.257][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-7] <==      Total: 1
-[22:32:28.257][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-5] <==      Total: 1
-[22:32:28.338][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-5] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[22:32:28.338][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-5] ==> Parameters: storm(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
-[22:32:28.340][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-7] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[22:32:28.341][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-7] ==> Parameters: storm(String), 849C829D658BAAEFF512D766B0DB3CCE(String)
-[22:32:28.375][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-5] <==      Total: 0
-[22:32:28.388][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-7] <==      Total: 1
-[22:33:30.224][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[22:33:30.261][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==> Parameters: storm(String)
-[22:33:30.322][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] <==      Total: 1
-[22:33:30.412][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[22:33:30.412][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] ==> Parameters: storm(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
-[22:33:30.454][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] <==      Total: 0
-[22:33:34.259][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[22:33:34.260][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] ==> Parameters: storm(String)
-[22:33:34.302][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] <==      Total: 1
-[22:33:34.385][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[22:33:34.385][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] ==> Parameters: storm(String), 849C829D658BAAEFF512D766B0DB3CCE(String)
-[22:33:34.438][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] <==      Total: 1
-[22:33:38.136][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-5] ==>  Preparing: SELECT id, order_no, user_id, shipping_id, payment, payment_type, postage, status, payment_time, send_time, end_time, close_time, create_time, update_time from mmall_order where order_no = ? and user_id = ? 
-[22:33:38.136][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-5] ==> Parameters: 1491753014256(Long), 22(Integer)
-[22:33:38.178][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-5] <==      Total: 0
-[22:34:07.439][INFO][c.m.controller.portal.OrderController][http-apr-8080-exec-7] 支付宝回调，sign：null,trade_status:null,参数{}
-[22:34:07.465][ERROR][c.m.controller.portal.OrderController][http-apr-8080-exec-7] 支付宝验证回调异常
-com.alipay.api.AlipayApiException: RSAcontent = ,sign=null,charset = utf-8
-	at com.alipay.api.internal.util.AlipaySignature.rsa256CheckContent(AlipaySignature.java:315) ~[alipay-sdk-java20161213173952.jar:na]
-	at com.alipay.api.internal.util.AlipaySignature.rsaCheck(AlipaySignature.java:287) ~[alipay-sdk-java20161213173952.jar:na]
-	at com.alipay.api.internal.util.AlipaySignature.rsaCheckV2(AlipaySignature.java:275) ~[alipay-sdk-java20161213173952.jar:na]
-	at com.mmall.controller.portal.OrderController.alipayCallback(OrderController.java:69) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_73]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_73]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_73]
-	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_73]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:214) [spring-web-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132) [spring-web-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:748) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:945) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:876) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:931) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:833) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:650) [servlet-api.jar:na]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:807) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731) [servlet-api.jar:na]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.72]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat7-websocket.jar:7.0.72]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.72]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88) [spring-web-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:108) [spring-web-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122) [catalina.jar:7.0.72]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169) [catalina.jar:7.0.72]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103) [catalina.jar:7.0.72]
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:956) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116) [catalina.jar:7.0.72]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:442) [catalina.jar:7.0.72]
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1083) [tomcat-coyote.jar:7.0.72]
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:640) [tomcat-coyote.jar:7.0.72]
-	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2517) [tomcat-coyote.jar:7.0.72]
-	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2506) [tomcat-coyote.jar:7.0.72]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_73]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_73]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-coyote.jar:7.0.72]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_73]
-Caused by: java.lang.NullPointerException: null
-	at com.alipay.api.internal.util.AlipaySignature.rsa256CheckContent(AlipaySignature.java:313) ~[alipay-sdk-java20161213173952.jar:na]
-	... 45 common frames omitted
-[22:34:09.755][INFO][c.m.controller.portal.OrderController][http-apr-8080-exec-9] 支付宝回调，sign：null,trade_status:null,参数{}
-[22:34:09.759][ERROR][c.m.controller.portal.OrderController][http-apr-8080-exec-9] 支付宝验证回调异常
-com.alipay.api.AlipayApiException: RSAcontent = ,sign=null,charset = utf-8
-	at com.alipay.api.internal.util.AlipaySignature.rsa256CheckContent(AlipaySignature.java:315) ~[alipay-sdk-java20161213173952.jar:na]
-	at com.alipay.api.internal.util.AlipaySignature.rsaCheck(AlipaySignature.java:287) ~[alipay-sdk-java20161213173952.jar:na]
-	at com.alipay.api.internal.util.AlipaySignature.rsaCheckV2(AlipaySignature.java:275) ~[alipay-sdk-java20161213173952.jar:na]
-	at com.mmall.controller.portal.OrderController.alipayCallback(OrderController.java:69) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_73]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_73]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_73]
-	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_73]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:214) [spring-web-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132) [spring-web-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:748) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:945) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:876) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:931) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:822) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624) [servlet-api.jar:na]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:807) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731) [servlet-api.jar:na]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.72]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat7-websocket.jar:7.0.72]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.72]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88) [spring-web-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:108) [spring-web-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122) [catalina.jar:7.0.72]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169) [catalina.jar:7.0.72]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103) [catalina.jar:7.0.72]
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:956) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116) [catalina.jar:7.0.72]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:442) [catalina.jar:7.0.72]
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1083) [tomcat-coyote.jar:7.0.72]
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:640) [tomcat-coyote.jar:7.0.72]
-	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2517) [tomcat-coyote.jar:7.0.72]
-	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2506) [tomcat-coyote.jar:7.0.72]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_73]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_73]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-coyote.jar:7.0.72]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_73]
-Caused by: java.lang.NullPointerException: null
-	at com.alipay.api.internal.util.AlipaySignature.rsa256CheckContent(AlipaySignature.java:313) ~[alipay-sdk-java20161213173952.jar:na]
-	... 45 common frames omitted
-[22:34:32.725][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-1] ==>  Preparing: SELECT id, order_no, user_id, shipping_id, payment, payment_type, postage, status, payment_time, send_time, end_time, close_time, create_time, update_time from mmall_order where order_no = ? and user_id = ? 
-[22:34:32.726][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-1] ==> Parameters: null, 22(Integer)
-[22:34:32.767][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-1] <==      Total: 0
-[22:35:10.254][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-4] ==>  Preparing: SELECT id, order_no, user_id, shipping_id, payment, payment_type, postage, status, payment_time, send_time, end_time, close_time, create_time, update_time from mmall_order where order_no = ? and user_id = ? 
-[22:35:10.254][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-4] ==> Parameters: 1491753014256(Long), 22(Integer)
-[22:35:10.295][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-4] <==      Total: 0
-[22:35:28.540][INFO][c.m.controller.portal.OrderController][http-apr-8080-exec-6] 支付宝回调，sign：null,trade_status:null,参数{}
-[22:35:28.542][ERROR][c.m.controller.portal.OrderController][http-apr-8080-exec-6] 支付宝验证回调异常
-com.alipay.api.AlipayApiException: RSAcontent = ,sign=null,charset = utf-8
-	at com.alipay.api.internal.util.AlipaySignature.rsa256CheckContent(AlipaySignature.java:315) ~[alipay-sdk-java20161213173952.jar:na]
-	at com.alipay.api.internal.util.AlipaySignature.rsaCheck(AlipaySignature.java:287) ~[alipay-sdk-java20161213173952.jar:na]
-	at com.alipay.api.internal.util.AlipaySignature.rsaCheckV2(AlipaySignature.java:275) ~[alipay-sdk-java20161213173952.jar:na]
-	at com.mmall.controller.portal.OrderController.alipayCallback(OrderController.java:69) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_73]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_73]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_73]
-	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_73]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:214) [spring-web-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132) [spring-web-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:748) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:945) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:876) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:931) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:822) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624) [servlet-api.jar:na]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:807) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731) [servlet-api.jar:na]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.72]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat7-websocket.jar:7.0.72]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.72]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88) [spring-web-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:108) [spring-web-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122) [catalina.jar:7.0.72]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169) [catalina.jar:7.0.72]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103) [catalina.jar:7.0.72]
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:956) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116) [catalina.jar:7.0.72]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:442) [catalina.jar:7.0.72]
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1083) [tomcat-coyote.jar:7.0.72]
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:640) [tomcat-coyote.jar:7.0.72]
-	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2517) [tomcat-coyote.jar:7.0.72]
-	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2506) [tomcat-coyote.jar:7.0.72]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_73]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_73]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-coyote.jar:7.0.72]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_73]
-Caused by: java.lang.NullPointerException: null
-	at com.alipay.api.internal.util.AlipaySignature.rsa256CheckContent(AlipaySignature.java:313) ~[alipay-sdk-java20161213173952.jar:na]
-	... 45 common frames omitted
-[22:35:32.313][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-8] ==>  Preparing: SELECT id, order_no, user_id, shipping_id, payment, payment_type, postage, status, payment_time, send_time, end_time, close_time, create_time, update_time from mmall_order where order_no = ? and user_id = ? 
-[22:35:32.313][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-8] ==> Parameters: null, 22(Integer)
-[22:35:32.355][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-8] <==      Total: 0
-[22:37:16.797][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-1] ==>  Preparing: SELECT id, order_no, user_id, shipping_id, payment, payment_type, postage, status, payment_time, send_time, end_time, close_time, create_time, update_time from mmall_order where order_no = ? and user_id = ? 
-[22:37:16.797][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-1] ==> Parameters: 1492091141262(Long), 22(Integer)
-[22:37:16.840][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-1] <==      Total: 1
-[22:37:16.941][DEBUG][c.m.d.OrderItemMapper.getByOrderNoUserId][http-apr-8080-exec-1] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? and user_id = ? 
-[22:37:16.942][DEBUG][c.m.d.OrderItemMapper.getByOrderNoUserId][http-apr-8080-exec-1] ==> Parameters: 1492091141262(Long), 22(Integer)
-[22:37:16.987][DEBUG][c.m.d.OrderItemMapper.getByOrderNoUserId][http-apr-8080-exec-1] <==      Total: 0
-[22:37:18.000][INFO][com.mmall.service.impl.OrderServiceImpl][http-apr-8080-exec-1] 支付宝预下单成功: )
-[22:37:18.000][INFO][com.mmall.service.impl.OrderServiceImpl][http-apr-8080-exec-1] code:10000, msg:Success
-[22:37:18.000][INFO][com.mmall.service.impl.OrderServiceImpl][http-apr-8080-exec-1] body: {"alipay_trade_precreate_response":{"code":"10000","msg":"Success","out_trade_no":"1492091141262","qr_code":"https:\/\/qr.alipay.com\/bax08719glhabgmggvfo00d8"},"sign":"M65TdpISSbUdEr9jMhm2LSFdo/xH2Tu1B/U19y/9VloaeDQUnu9gtppP11uu2RFwUohf1+ersGFhy7JE9ozPHt3N2zhPstpg0/FHVlvGTTdG69/WLUtdyjY4sf0lukJTOlSR+/lzWUsyA0C819+QCCRLqNWgbGTzkXdO0uhGqR/PgU/yi8Bxa1Z/16soEDVuI4t2vgYJc8ukU7OsUzTig6to9qAAQ0AJOeJnlBc5GiCs1zecBlpKJj2qkqPZvhwMf0m5dok7L38MMhg8JjY3gPv4AUM7zNYs63Jdy6xZsYVpLoGRZRArYtX1eVYtB0mlTIzNkouHVKeTn7n9/RW6VQ=="}
-[22:37:18.138][INFO][com.mmall.util.FTPUtil][http-apr-8080-exec-1] 开始连接ftp服务器
-[22:37:21.425][INFO][com.mmall.util.FTPUtil][http-apr-8080-exec-1] 开始连接ftp服务器,结束上传,上传结果:{}
-[22:37:21.425][INFO][com.mmall.service.impl.OrderServiceImpl][http-apr-8080-exec-1] qrPath:D:\SQL\TomCat\apache-tomcat-7.0.72\webapps\mmall\upload/qr-1492091141262.png
-[22:37:50.777][INFO][c.m.controller.portal.OrderController][http-apr-8080-exec-4] 支付宝回调，sign：null,trade_status:null,参数{}
-[22:37:50.782][ERROR][c.m.controller.portal.OrderController][http-apr-8080-exec-4] 支付宝验证回调异常
-com.alipay.api.AlipayApiException: RSAcontent = ,sign=null,charset = utf-8
-	at com.alipay.api.internal.util.AlipaySignature.rsa256CheckContent(AlipaySignature.java:315) ~[alipay-sdk-java20161213173952.jar:na]
-	at com.alipay.api.internal.util.AlipaySignature.rsaCheck(AlipaySignature.java:287) ~[alipay-sdk-java20161213173952.jar:na]
-	at com.alipay.api.internal.util.AlipaySignature.rsaCheckV2(AlipaySignature.java:275) ~[alipay-sdk-java20161213173952.jar:na]
-	at com.mmall.controller.portal.OrderController.alipayCallback(OrderController.java:69) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_73]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_73]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_73]
-	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_73]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:214) [spring-web-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132) [spring-web-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:748) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:945) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:876) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:931) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:822) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624) [servlet-api.jar:na]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:807) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731) [servlet-api.jar:na]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.72]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat7-websocket.jar:7.0.72]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.72]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88) [spring-web-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:108) [spring-web-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122) [catalina.jar:7.0.72]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169) [catalina.jar:7.0.72]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103) [catalina.jar:7.0.72]
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:956) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116) [catalina.jar:7.0.72]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:442) [catalina.jar:7.0.72]
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1083) [tomcat-coyote.jar:7.0.72]
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:640) [tomcat-coyote.jar:7.0.72]
-	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2517) [tomcat-coyote.jar:7.0.72]
-	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2506) [tomcat-coyote.jar:7.0.72]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_73]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_73]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-coyote.jar:7.0.72]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_73]
-Caused by: java.lang.NullPointerException: null
-	at com.alipay.api.internal.util.AlipaySignature.rsa256CheckContent(AlipaySignature.java:313) ~[alipay-sdk-java20161213173952.jar:na]
-	... 45 common frames omitted
-[22:37:53.963][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-6] ==>  Preparing: SELECT id, order_no, user_id, shipping_id, payment, payment_type, postage, status, payment_time, send_time, end_time, close_time, create_time, update_time from mmall_order where order_no = ? and user_id = ? 
-[22:37:53.964][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-6] ==> Parameters: null, 22(Integer)
-[22:37:54.006][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-6] <==      Total: 0
-[22:39:40.331][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[22:39:40.331][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==>  Preparing: select count(1) from mmall_user where username = ? 
-[22:39:40.366][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==> Parameters: storm(String)
-[22:39:40.366][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] ==> Parameters: storm(String)
-[22:39:40.428][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] <==      Total: 1
-[22:39:40.428][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-4] <==      Total: 1
-[22:39:40.520][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[22:39:40.520][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] ==> Parameters: storm(String), 849C829D658BAAEFF512D766B0DB3CCE(String)
-[22:39:40.523][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
-[22:39:40.523][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] ==> Parameters: storm(String), BEFE1F292F6F892960D2AE6DC5A43554(String)
-[22:39:40.567][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] <==      Total: 0
-[22:39:40.569][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-4] <==      Total: 1
-[22:39:42.563][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-5] ==>  Preparing: SELECT id, order_no, user_id, shipping_id, payment, payment_type, postage, status, payment_time, send_time, end_time, close_time, create_time, update_time from mmall_order where order_no = ? and user_id = ? 
-[22:39:42.564][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-5] ==> Parameters: 1492091141262(Long), 22(Integer)
-[22:39:42.854][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-5] <==      Total: 1
-[22:39:43.186][DEBUG][c.m.d.OrderItemMapper.getByOrderNoUserId][http-apr-8080-exec-5] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? and user_id = ? 
-[22:39:43.187][DEBUG][c.m.d.OrderItemMapper.getByOrderNoUserId][http-apr-8080-exec-5] ==> Parameters: 1492091141262(Long), 22(Integer)
-[22:39:43.228][DEBUG][c.m.d.OrderItemMapper.getByOrderNoUserId][http-apr-8080-exec-5] <==      Total: 0
-[22:39:43.978][INFO][com.mmall.service.impl.OrderServiceImpl][http-apr-8080-exec-5] 支付宝预下单成功: )
-[22:39:43.978][INFO][com.mmall.service.impl.OrderServiceImpl][http-apr-8080-exec-5] code:10000, msg:Success
-[22:39:43.978][INFO][com.mmall.service.impl.OrderServiceImpl][http-apr-8080-exec-5] body: {"alipay_trade_precreate_response":{"code":"10000","msg":"Success","out_trade_no":"1492091141262","qr_code":"https:\/\/qr.alipay.com\/bax05739xvnxk0y2owje0081"},"sign":"Win3Yn2FC0yPJjEMqHmNBvr2S69jC2mVHoUUXj5xwAkq1A4sqXUR27z4Wsv+wN866DSRicE9067Lgc0CD0RBo9aMteVp+gwSwcw9hsSz53VRoEroFNlh+Fk2RhmaeRO2KTyqBC+RQi/m1Y1co5G0E0RkhloqHdt0qy/SAjyueyrnaBgcB7gFDWe/q+MMDNpWpndYoOQ/L0yOWe4OBCliglv7iFhedEdcJ/ilRiTHtnbPmaW+Z4/r7EWcIUS8zg7VkE6sAuLsbRtdhYRpD8S5Hrvp5ht6zIMGPIEln+OXKjF6ZFoDnrxyQsZmZBmovUgUIemFzdBM9Opp6oNIsprsxA=="}
-[22:39:44.109][INFO][com.mmall.util.FTPUtil][http-apr-8080-exec-5] 开始连接ftp服务器
-[22:39:47.108][INFO][com.mmall.util.FTPUtil][http-apr-8080-exec-5] 开始连接ftp服务器,结束上传,上传结果:{}
-[22:39:47.108][INFO][com.mmall.service.impl.OrderServiceImpl][http-apr-8080-exec-5] qrPath:D:\SQL\TomCat\apache-tomcat-7.0.72\webapps\mmall\upload/qr-1492091141262.png
-[22:39:50.012][INFO][c.m.controller.portal.OrderController][http-apr-8080-exec-6] 支付宝回调,sign:null,trade_status:null,参数:{}
-[22:39:50.027][ERROR][c.m.controller.portal.OrderController][http-apr-8080-exec-6] 支付宝验证回调异常
-com.alipay.api.AlipayApiException: RSAcontent = ,sign=null,charset = utf-8
-	at com.alipay.api.internal.util.AlipaySignature.rsa256CheckContent(AlipaySignature.java:315) ~[alipay-sdk-java20161213173952.jar:na]
-	at com.alipay.api.internal.util.AlipaySignature.rsaCheck(AlipaySignature.java:287) ~[alipay-sdk-java20161213173952.jar:na]
-	at com.alipay.api.internal.util.AlipaySignature.rsaCheckV2(AlipaySignature.java:275) ~[alipay-sdk-java20161213173952.jar:na]
-	at com.mmall.controller.portal.OrderController.alipayCallback(OrderController.java:72) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_73]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_73]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_73]
-	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_73]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:214) [spring-web-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132) [spring-web-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:748) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:945) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:876) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:931) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:822) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624) [servlet-api.jar:na]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:807) [spring-webmvc-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731) [servlet-api.jar:na]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.72]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat7-websocket.jar:7.0.72]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.72]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88) [spring-web-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:108) [spring-web-4.0.0.RELEASE.jar:4.0.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122) [catalina.jar:7.0.72]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169) [catalina.jar:7.0.72]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103) [catalina.jar:7.0.72]
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:956) [catalina.jar:7.0.72]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116) [catalina.jar:7.0.72]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:442) [catalina.jar:7.0.72]
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1083) [tomcat-coyote.jar:7.0.72]
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:640) [tomcat-coyote.jar:7.0.72]
-	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2517) [tomcat-coyote.jar:7.0.72]
-	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2506) [tomcat-coyote.jar:7.0.72]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_73]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_73]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-coyote.jar:7.0.72]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_73]
-Caused by: java.lang.NullPointerException: null
-	at com.alipay.api.internal.util.AlipaySignature.rsa256CheckContent(AlipaySignature.java:313) ~[alipay-sdk-java20161213173952.jar:na]
-	... 45 common frames omitted
-[22:39:54.783][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-8] ==>  Preparing: SELECT id, order_no, user_id, shipping_id, payment, payment_type, postage, status, payment_time, send_time, end_time, close_time, create_time, update_time from mmall_order where order_no = ? and user_id = ? 
-[22:39:54.783][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-8] ==> Parameters: null, 22(Integer)
-[22:39:54.825][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-8] <==      Total: 0
+[16:49:24.847][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==>  Preparing: select count(1) from mmall_user where username = ? 
+[16:49:24.888][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] ==> Parameters: storm(String)
+[16:49:24.948][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-apr-8080-exec-2] <==      Total: 1
+[16:49:25.040][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] ==>  Preparing: SELECT id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username = ? and password = ? 
+[16:49:25.041][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] ==> Parameters: storm(String), 849C829D658BAAEFF512D766B0DB3CCE(String)
+[16:49:25.089][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-apr-8080-exec-2] <==      Total: 1
+[16:51:33.412][DEBUG][c.m.d.C.selectCheckedCartByUserId][http-apr-8080-exec-5] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? and checked = 1 
+[16:51:33.413][DEBUG][c.m.d.C.selectCheckedCartByUserId][http-apr-8080-exec-5] ==> Parameters: 22(Integer)
+[16:51:33.457][DEBUG][c.m.d.C.selectCheckedCartByUserId][http-apr-8080-exec-5] <==      Total: 1
+[16:51:33.550][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[16:51:33.550][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 30(Integer)
+[16:51:33.596][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[16:51:33.685][DEBUG][com.mmall.dao.OrderMapper.insert][http-apr-8080-exec-5] ==>  Preparing: insert into mmall_order (id, order_no, user_id, shipping_id, payment, payment_type, postage, status, payment_time, send_time, end_time, close_time, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, now(), now()) 
+[16:51:33.687][DEBUG][com.mmall.dao.OrderMapper.insert][http-apr-8080-exec-5] ==> Parameters: null, 1506070293601(Long), 22(Integer), 30(Integer), 100200.0(BigDecimal), 1(Integer), 0(Integer), 10(Integer), null, null, null, null
+[16:51:33.731][DEBUG][com.mmall.dao.OrderMapper.insert][http-apr-8080-exec-5] <==    Updates: 1
+[16:51:33.858][DEBUG][c.mmall.dao.OrderItemMapper.batchInsert][http-apr-8080-exec-5] ==>  Preparing: insert into mmall_order_item (id, order_no,user_id, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time) values ( ?,?,?,?,?,?,?,?,?,now(),now() ) 
+[16:51:33.859][DEBUG][c.mmall.dao.OrderItemMapper.batchInsert][http-apr-8080-exec-5] ==> Parameters: null, 1506070293601(Long), 22(Integer), 30(Integer), sageg(String), null, 1002.00(BigDecimal), 100(Integer), 100200.00(BigDecimal)
+[16:51:33.903][DEBUG][c.mmall.dao.OrderItemMapper.batchInsert][http-apr-8080-exec-5] <==    Updates: 1
+[16:51:33.986][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[16:51:33.986][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 30(Integer)
+[16:51:34.028][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[16:51:34.120][DEBUG][c.m.d.P.updateByPrimaryKeySelective][http-apr-8080-exec-5] ==>  Preparing: update mmall_product SET category_id = ?, name = ?, subtitle = ?, detail = ?, price = ?, stock = ?, status = ?, create_time = ?, update_time = now() where id = ? 
+[16:51:34.121][DEBUG][c.m.d.P.updateByPrimaryKeySelective][http-apr-8080-exec-5] ==> Parameters: 10001(Integer), sageg(String), sdgawe(String), dsfafsa(String), 1002.00(BigDecimal), 0(Integer), 1(Integer), 2017-09-16 22:25:30.0(Timestamp), 30(Integer)
+[16:51:34.164][DEBUG][c.m.d.P.updateByPrimaryKeySelective][http-apr-8080-exec-5] <==    Updates: 1
+[16:51:34.248][DEBUG][c.m.dao.CartMapper.deleteByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: delete from mmall_cart where id = ? 
+[16:51:34.249][DEBUG][c.m.dao.CartMapper.deleteByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 129(Integer)
+[16:51:34.292][DEBUG][c.m.dao.CartMapper.deleteByPrimaryKey][http-apr-8080-exec-5] <==    Updates: 1
+[16:51:34.374][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:51:34.375][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 30(Integer)
+[16:51:34.421][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[16:52:50.918][DEBUG][c.m.d.C.selectCheckedCartByUserId][http-apr-8080-exec-8] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? and checked = 1 
+[16:52:50.919][DEBUG][c.m.d.C.selectCheckedCartByUserId][http-apr-8080-exec-8] ==> Parameters: 22(Integer)
+[16:52:51.205][DEBUG][c.m.d.C.selectCheckedCartByUserId][http-apr-8080-exec-8] <==      Total: 0
+[16:53:04.762][DEBUG][c.m.d.C.selectCartByUserIdProductId][http-apr-8080-exec-10] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? and product_id = ? 
+[16:53:04.762][DEBUG][c.m.d.C.selectCartByUserIdProductId][http-apr-8080-exec-10] ==> Parameters: 22(Integer), 30(Integer)
+[16:53:04.804][DEBUG][c.m.d.C.selectCartByUserIdProductId][http-apr-8080-exec-10] <==      Total: 0
+[16:53:04.887][DEBUG][com.mmall.dao.CartMapper.insert][http-apr-8080-exec-10] ==>  Preparing: insert into mmall_cart (id, user_id, product_id, quantity, checked, create_time, update_time) values (?, ?, ?, ?, ?, now(), now()) 
+[16:53:04.887][DEBUG][com.mmall.dao.CartMapper.insert][http-apr-8080-exec-10] ==> Parameters: null, 22(Integer), 30(Integer), 1(Integer), 1(Integer)
+[16:53:04.930][DEBUG][com.mmall.dao.CartMapper.insert][http-apr-8080-exec-10] <==    Updates: 1
+[16:53:05.014][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-10] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? 
+[16:53:05.014][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-10] ==> Parameters: 22(Integer)
+[16:53:05.056][DEBUG][c.m.dao.CartMapper.selectCartByUserId][http-apr-8080-exec-10] <==      Total: 1
+[16:53:05.140][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-10] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[16:53:05.140][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-10] ==> Parameters: 30(Integer)
+[16:53:05.182][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-10] <==      Total: 1
+[16:53:05.269][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-apr-8080-exec-10] ==>  Preparing: update mmall_cart SET quantity = ? where id = ? 
+[16:53:05.271][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-apr-8080-exec-10] ==> Parameters: 0(Integer), 130(Integer)
+[16:53:05.314][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-apr-8080-exec-10] <==    Updates: 1
+[16:53:05.398][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-10] ==>  Preparing: SELECT count(1) from mmall_cart where checked = 0 and user_id = ? 
+[16:53:05.398][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-10] ==> Parameters: 22(Integer)
+[16:53:05.439][DEBUG][c.m.d.C.selectCartProductCheckedStatusByUserId][http-apr-8080-exec-10] <==      Total: 1
+[16:53:15.023][DEBUG][c.m.d.C.selectCheckedCartByUserId][http-apr-8080-exec-1] ==>  Preparing: SELECT id, user_id, product_id, quantity, checked, create_time, update_time from mmall_cart where user_id = ? and checked = 1 
+[16:53:15.024][DEBUG][c.m.d.C.selectCheckedCartByUserId][http-apr-8080-exec-1] ==> Parameters: 22(Integer)
+[16:53:15.066][DEBUG][c.m.d.C.selectCheckedCartByUserId][http-apr-8080-exec-1] <==      Total: 1
+[16:53:15.148][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-1] ==>  Preparing: select id, category_id, name, subtitle, main_image, sub_images, detail, price, stock, status, create_time, update_time from mmall_product where id = ? 
+[16:53:15.149][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-1] ==> Parameters: 30(Integer)
+[16:53:15.433][DEBUG][c.m.dao.ProductMapper.selectByPrimaryKey][http-apr-8080-exec-1] <==      Total: 1
+[16:53:42.822][DEBUG][c.m.dao.OrderMapper.selectByUserId_COUNT][http-apr-8080-exec-2] ==>  Preparing: SELECT count(*) FROM mmall_order WHERE user_id = ? 
+[16:53:42.822][DEBUG][c.m.dao.OrderMapper.selectByUserId_COUNT][http-apr-8080-exec-2] ==> Parameters: 22(Integer)
+[16:53:42.863][DEBUG][c.m.dao.OrderMapper.selectByUserId_COUNT][http-apr-8080-exec-2] <==      Total: 1
+[16:53:42.866][DEBUG][com.mmall.dao.OrderMapper.selectByUserId][http-apr-8080-exec-2] ==>  Preparing: SELECT id, order_no, user_id, shipping_id, payment, payment_type, postage, status, payment_time, send_time, end_time, close_time, create_time, update_time from mmall_order where user_id = ? order by create_time desc limit ?,? 
+[16:53:42.867][DEBUG][com.mmall.dao.OrderMapper.selectByUserId][http-apr-8080-exec-2] ==> Parameters: 22(Integer), 0(Integer), 10(Integer)
+[16:53:42.911][DEBUG][com.mmall.dao.OrderMapper.selectByUserId][http-apr-8080-exec-2] <==      Total: 2
+[16:53:42.996][DEBUG][c.m.d.OrderItemMapper.getByOrderNoUserId][http-apr-8080-exec-2] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? and user_id = ? 
+[16:53:42.997][DEBUG][c.m.d.OrderItemMapper.getByOrderNoUserId][http-apr-8080-exec-2] ==> Parameters: 1506070293601(Long), 22(Integer)
+[16:53:43.040][DEBUG][c.m.d.OrderItemMapper.getByOrderNoUserId][http-apr-8080-exec-2] <==      Total: 1
+[16:53:43.124][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:53:43.124][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 30(Integer)
+[16:53:43.167][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[16:53:43.345][DEBUG][c.m.d.OrderItemMapper.getByOrderNoUserId][http-apr-8080-exec-2] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? and user_id = ? 
+[16:53:43.345][DEBUG][c.m.d.OrderItemMapper.getByOrderNoUserId][http-apr-8080-exec-2] ==> Parameters: 1492091141262(Long), 22(Integer)
+[16:53:43.388][DEBUG][c.m.d.OrderItemMapper.getByOrderNoUserId][http-apr-8080-exec-2] <==      Total: 0
+[16:53:43.470][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:53:43.471][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-2] ==> Parameters: 29(Integer)
+[16:53:43.513][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-2] <==      Total: 1
+[16:54:42.823][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-5] ==>  Preparing: SELECT id, order_no, user_id, shipping_id, payment, payment_type, postage, status, payment_time, send_time, end_time, close_time, create_time, update_time from mmall_order where order_no = ? and user_id = ? 
+[16:54:42.823][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-5] ==> Parameters: 1492091141262(Long), 22(Integer)
+[16:54:42.865][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-5] <==      Total: 1
+[16:54:42.950][DEBUG][c.m.d.OrderItemMapper.getByOrderNoUserId][http-apr-8080-exec-5] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? and user_id = ? 
+[16:54:42.950][DEBUG][c.m.d.OrderItemMapper.getByOrderNoUserId][http-apr-8080-exec-5] ==> Parameters: 1492091141262(Long), 22(Integer)
+[16:54:42.992][DEBUG][c.m.d.OrderItemMapper.getByOrderNoUserId][http-apr-8080-exec-5] <==      Total: 0
+[16:54:43.077][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:54:43.077][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-5] ==> Parameters: 29(Integer)
+[16:54:43.119][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-5] <==      Total: 1
+[16:55:10.954][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-8] ==>  Preparing: SELECT id, order_no, user_id, shipping_id, payment, payment_type, postage, status, payment_time, send_time, end_time, close_time, create_time, update_time from mmall_order where order_no = ? and user_id = ? 
+[16:55:10.954][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-8] ==> Parameters: 1492091141262(Long), 22(Integer)
+[16:55:10.996][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-8] <==      Total: 1
+[16:55:11.083][DEBUG][c.m.d.O.updateByPrimaryKeySelective][http-apr-8080-exec-8] ==>  Preparing: update mmall_order SET status = ? where id = ? 
+[16:55:11.084][DEBUG][c.m.d.O.updateByPrimaryKeySelective][http-apr-8080-exec-8] ==> Parameters: 0(Integer), 118(Integer)
+[16:55:11.142][DEBUG][c.m.d.O.updateByPrimaryKeySelective][http-apr-8080-exec-8] <==    Updates: 1
+[16:55:20.668][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-1] ==>  Preparing: SELECT id, order_no, user_id, shipping_id, payment, payment_type, postage, status, payment_time, send_time, end_time, close_time, create_time, update_time from mmall_order where order_no = ? and user_id = ? 
+[16:55:20.668][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-1] ==> Parameters: 1492091141262(Long), 22(Integer)
+[16:55:20.710][DEBUG][c.m.d.O.selectByUserIdAndOrderNo][http-apr-8080-exec-1] <==      Total: 1
+[16:55:21.037][DEBUG][c.m.d.OrderItemMapper.getByOrderNoUserId][http-apr-8080-exec-1] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? and user_id = ? 
+[16:55:21.037][DEBUG][c.m.d.OrderItemMapper.getByOrderNoUserId][http-apr-8080-exec-1] ==> Parameters: 1492091141262(Long), 22(Integer)
+[16:55:21.079][DEBUG][c.m.d.OrderItemMapper.getByOrderNoUserId][http-apr-8080-exec-1] <==      Total: 0
+[16:55:21.164][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-1] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:55:21.164][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-1] ==> Parameters: 29(Integer)
+[16:55:21.207][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-1] <==      Total: 1
+[16:56:19.464][DEBUG][c.m.dao.OrderMapper.selectAllOrder_COUNT][http-apr-8080-exec-4] ==>  Preparing: SELECT count(*) FROM mmall_order 
+[16:56:19.464][DEBUG][c.m.dao.OrderMapper.selectAllOrder_COUNT][http-apr-8080-exec-4] ==> Parameters: 
+[16:56:19.505][DEBUG][c.m.dao.OrderMapper.selectAllOrder_COUNT][http-apr-8080-exec-4] <==      Total: 1
+[16:56:19.505][DEBUG][com.mmall.dao.OrderMapper.selectAllOrder][http-apr-8080-exec-4] ==>  Preparing: SELECT id, order_no, user_id, shipping_id, payment, payment_type, postage, status, payment_time, send_time, end_time, close_time, create_time, update_time from mmall_order ORDER BY create_time desc limit ?,? 
+[16:56:19.506][DEBUG][com.mmall.dao.OrderMapper.selectAllOrder][http-apr-8080-exec-4] ==> Parameters: 0(Integer), 10(Integer)
+[16:56:19.688][DEBUG][com.mmall.dao.OrderMapper.selectAllOrder][http-apr-8080-exec-4] <==      Total: 10
+[16:56:20.016][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? 
+[16:56:20.017][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] ==> Parameters: 1506070293601(Long)
+[16:56:20.059][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] <==      Total: 1
+[16:56:20.386][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:56:20.386][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==> Parameters: 30(Integer)
+[16:56:20.432][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] <==      Total: 1
+[16:56:20.516][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? 
+[16:56:20.516][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] ==> Parameters: 1492091141262(Long)
+[16:56:20.558][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] <==      Total: 0
+[16:56:20.883][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:56:20.884][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==> Parameters: 29(Integer)
+[16:56:20.926][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] <==      Total: 1
+[16:56:21.252][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? 
+[16:56:21.253][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] ==> Parameters: 1492091141269(Long)
+[16:56:21.296][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] <==      Total: 4
+[16:56:21.382][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:56:21.382][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==> Parameters: 29(Integer)
+[16:56:21.425][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] <==      Total: 1
+[16:56:21.509][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? 
+[16:56:21.509][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] ==> Parameters: 1492091110004(Long)
+[16:56:21.553][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] <==      Total: 1
+[16:56:21.642][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:56:21.642][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==> Parameters: 29(Integer)
+[16:56:21.932][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] <==      Total: 1
+[16:56:22.018][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? 
+[16:56:22.018][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] ==> Parameters: 1492091102371(Long)
+[16:56:22.060][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] <==      Total: 1
+[16:56:22.147][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:56:22.147][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==> Parameters: 29(Integer)
+[16:56:22.194][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] <==      Total: 1
+[16:56:22.279][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? 
+[16:56:22.279][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] ==> Parameters: 1492091096400(Long)
+[16:56:22.321][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] <==      Total: 1
+[16:56:22.404][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:56:22.404][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==> Parameters: 29(Integer)
+[16:56:22.448][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] <==      Total: 1
+[16:56:22.775][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? 
+[16:56:22.776][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] ==> Parameters: 1492091089794(Long)
+[16:56:22.820][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] <==      Total: 1
+[16:56:22.905][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:56:22.905][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==> Parameters: 29(Integer)
+[16:56:22.947][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] <==      Total: 1
+[16:56:23.032][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? 
+[16:56:23.033][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] ==> Parameters: 1492091083720(Long)
+[16:56:23.322][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] <==      Total: 1
+[16:56:23.406][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:56:23.407][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==> Parameters: 29(Integer)
+[16:56:23.449][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] <==      Total: 1
+[16:56:23.535][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? 
+[16:56:23.535][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] ==> Parameters: 1492091076073(Long)
+[16:56:23.820][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] <==      Total: 1
+[16:56:23.903][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:56:23.903][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==> Parameters: 29(Integer)
+[16:56:23.946][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] <==      Total: 1
+[16:56:24.029][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? 
+[16:56:24.029][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] ==> Parameters: 1492091069563(Long)
+[16:56:24.071][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-4] <==      Total: 1
+[16:56:24.154][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:56:24.154][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] ==> Parameters: 29(Integer)
+[16:56:24.196][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-4] <==      Total: 1
+[16:57:53.667][DEBUG][c.m.d.OrderMapper.selectByOrderNo_COUNT][http-apr-8080-exec-7] ==>  Preparing: SELECT count(*) FROM mmall_order WHERE order_no = ? 
+[16:57:53.668][DEBUG][c.m.d.OrderMapper.selectByOrderNo_COUNT][http-apr-8080-exec-7] ==> Parameters: 1492091141262(Long)
+[16:57:53.709][DEBUG][c.m.d.OrderMapper.selectByOrderNo_COUNT][http-apr-8080-exec-7] <==      Total: 1
+[16:57:53.710][DEBUG][c.mmall.dao.OrderMapper.selectByOrderNo][http-apr-8080-exec-7] ==>  Preparing: SELECT id, order_no, user_id, shipping_id, payment, payment_type, postage, status, payment_time, send_time, end_time, close_time, create_time, update_time FROM mmall_order where order_no = ? limit ?,? 
+[16:57:53.710][DEBUG][c.mmall.dao.OrderMapper.selectByOrderNo][http-apr-8080-exec-7] ==> Parameters: 1492091141262(Long), 0(Integer), 10(Integer)
+[16:57:53.752][DEBUG][c.mmall.dao.OrderMapper.selectByOrderNo][http-apr-8080-exec-7] <==      Total: 1
+[16:57:53.836][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-7] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? 
+[16:57:53.837][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-7] ==> Parameters: 1492091141262(Long)
+[16:57:54.122][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-7] <==      Total: 0
+[16:57:54.205][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-7] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:57:54.205][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-7] ==> Parameters: 29(Integer)
+[16:57:54.248][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-7] <==      Total: 1
+[16:58:25.402][DEBUG][c.mmall.dao.OrderMapper.selectByOrderNo][http-apr-8080-exec-10] ==>  Preparing: SELECT id, order_no, user_id, shipping_id, payment, payment_type, postage, status, payment_time, send_time, end_time, close_time, create_time, update_time FROM mmall_order where order_no = ? 
+[16:58:25.403][DEBUG][c.mmall.dao.OrderMapper.selectByOrderNo][http-apr-8080-exec-10] ==> Parameters: 1492091141262(Long)
+[16:58:25.445][DEBUG][c.mmall.dao.OrderMapper.selectByOrderNo][http-apr-8080-exec-10] <==      Total: 1
+[16:58:25.530][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-10] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? 
+[16:58:25.530][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-10] ==> Parameters: 1492091141262(Long)
+[16:58:25.571][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-10] <==      Total: 0
+[16:58:25.655][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-10] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:58:25.655][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-10] ==> Parameters: 29(Integer)
+[16:58:25.940][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-10] <==      Total: 1
+[16:58:41.178][DEBUG][c.mmall.dao.OrderMapper.selectByOrderNo][http-apr-8080-exec-1] ==>  Preparing: SELECT id, order_no, user_id, shipping_id, payment, payment_type, postage, status, payment_time, send_time, end_time, close_time, create_time, update_time FROM mmall_order where order_no = ? 
+[16:58:41.178][DEBUG][c.mmall.dao.OrderMapper.selectByOrderNo][http-apr-8080-exec-1] ==> Parameters: 1492091141262(Long)
+[16:58:41.221][DEBUG][c.mmall.dao.OrderMapper.selectByOrderNo][http-apr-8080-exec-1] <==      Total: 1
+[16:58:52.981][DEBUG][c.m.dao.OrderMapper.selectAllOrder_COUNT][http-apr-8080-exec-3] ==>  Preparing: SELECT count(*) FROM mmall_order 
+[16:58:52.981][DEBUG][c.m.dao.OrderMapper.selectAllOrder_COUNT][http-apr-8080-exec-3] ==> Parameters: 
+[16:58:53.022][DEBUG][c.m.dao.OrderMapper.selectAllOrder_COUNT][http-apr-8080-exec-3] <==      Total: 1
+[16:58:53.022][DEBUG][com.mmall.dao.OrderMapper.selectAllOrder][http-apr-8080-exec-3] ==>  Preparing: SELECT id, order_no, user_id, shipping_id, payment, payment_type, postage, status, payment_time, send_time, end_time, close_time, create_time, update_time from mmall_order ORDER BY create_time desc limit ?,? 
+[16:58:53.023][DEBUG][com.mmall.dao.OrderMapper.selectAllOrder][http-apr-8080-exec-3] ==> Parameters: 0(Integer), 10(Integer)
+[16:58:53.067][DEBUG][com.mmall.dao.OrderMapper.selectAllOrder][http-apr-8080-exec-3] <==      Total: 10
+[16:58:53.150][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? 
+[16:58:53.150][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] ==> Parameters: 1506070293601(Long)
+[16:58:53.436][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] <==      Total: 1
+[16:58:53.519][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:58:53.520][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==> Parameters: 30(Integer)
+[16:58:53.561][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] <==      Total: 1
+[16:58:53.644][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? 
+[16:58:53.644][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] ==> Parameters: 1492091141262(Long)
+[16:58:53.687][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] <==      Total: 0
+[16:58:53.770][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:58:53.770][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==> Parameters: 29(Integer)
+[16:58:53.812][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] <==      Total: 1
+[16:58:53.896][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? 
+[16:58:53.896][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] ==> Parameters: 1492091141269(Long)
+[16:58:53.939][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] <==      Total: 4
+[16:58:54.021][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:58:54.022][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==> Parameters: 29(Integer)
+[16:58:54.063][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] <==      Total: 1
+[16:58:54.147][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? 
+[16:58:54.147][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] ==> Parameters: 1492091110004(Long)
+[16:58:54.189][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] <==      Total: 1
+[16:58:54.271][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:58:54.271][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==> Parameters: 29(Integer)
+[16:58:54.313][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] <==      Total: 1
+[16:58:54.396][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? 
+[16:58:54.396][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] ==> Parameters: 1492091102371(Long)
+[16:58:54.438][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] <==      Total: 1
+[16:58:54.521][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:58:54.521][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==> Parameters: 29(Integer)
+[16:58:54.563][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] <==      Total: 1
+[16:58:54.646][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? 
+[16:58:54.647][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] ==> Parameters: 1492091096400(Long)
+[16:58:54.688][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] <==      Total: 1
+[16:58:54.771][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:58:54.772][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==> Parameters: 29(Integer)
+[16:58:54.814][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] <==      Total: 1
+[16:58:54.897][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? 
+[16:58:54.897][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] ==> Parameters: 1492091089794(Long)
+[16:58:54.939][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] <==      Total: 1
+[16:58:55.022][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:58:55.022][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==> Parameters: 29(Integer)
+[16:58:55.064][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] <==      Total: 1
+[16:58:55.399][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? 
+[16:58:55.399][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] ==> Parameters: 1492091083720(Long)
+[16:58:55.440][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] <==      Total: 1
+[16:58:55.523][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:58:55.523][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==> Parameters: 29(Integer)
+[16:58:55.564][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] <==      Total: 1
+[16:58:55.890][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? 
+[16:58:55.891][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] ==> Parameters: 1492091076073(Long)
+[16:58:55.932][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] <==      Total: 1
+[16:58:56.015][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:58:56.015][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==> Parameters: 29(Integer)
+[16:58:56.057][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] <==      Total: 1
+[16:58:56.381][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] ==>  Preparing: SELECT id, user_id, order_no, product_id, product_name, product_image, current_unit_price, quantity, total_price, create_time, update_time from mmall_order_item where order_no = ? 
+[16:58:56.381][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] ==> Parameters: 1492091069563(Long)
+[16:58:56.423][DEBUG][c.mmall.dao.OrderItemMapper.getByOrderNo][http-apr-8080-exec-3] <==      Total: 1
+[16:58:56.505][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==>  Preparing: select id, user_id, receiver_name, receiver_phone, receiver_mobile, receiver_province, receiver_city, receiver_district, receiver_address, receiver_zip, create_time, update_time from mmall_shipping where id = ? 
+[16:58:56.506][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] ==> Parameters: 29(Integer)
+[16:58:56.547][DEBUG][c.m.d.ShippingMapper.selectByPrimaryKey][http-apr-8080-exec-3] <==      Total: 1
+[16:59:22.912][DEBUG][c.mmall.dao.OrderMapper.selectByOrderNo][http-apr-8080-exec-4] ==>  Preparing: SELECT id, order_no, user_id, shipping_id, payment, payment_type, postage, status, payment_time, send_time, end_time, close_time, create_time, update_time FROM mmall_order where order_no = ? 
+[16:59:22.913][DEBUG][c.mmall.dao.OrderMapper.selectByOrderNo][http-apr-8080-exec-4] ==> Parameters: 1492091141269(Long)
+[16:59:22.954][DEBUG][c.mmall.dao.OrderMapper.selectByOrderNo][http-apr-8080-exec-4] <==      Total: 1
+[16:59:23.036][DEBUG][c.m.d.O.updateByPrimaryKeySelective][http-apr-8080-exec-4] ==>  Preparing: update mmall_order SET order_no = ?, user_id = ?, shipping_id = ?, payment = ?, payment_type = ?, postage = ?, status = ?, payment_time = ?, send_time = ?, create_time = ?, update_time = now() where id = ? 
+[16:59:23.037][DEBUG][c.m.d.O.updateByPrimaryKeySelective][http-apr-8080-exec-4] ==> Parameters: 1492091141269(Long), 1(Integer), 29(Integer), 22894.00(BigDecimal), 1(Integer), 0(Integer), 40(Integer), 2017-04-13 21:46:06.0(Timestamp), 2017-09-22 16:59:22.955(Timestamp), 2017-04-13 21:45:41.0(Timestamp), 117(Integer)
+[16:59:23.080][DEBUG][c.m.d.O.updateByPrimaryKeySelective][http-apr-8080-exec-4] <==    Updates: 1
