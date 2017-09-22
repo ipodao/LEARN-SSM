@@ -36,6 +36,34 @@ public class OrderController {
     @Autowired
     private IOrderService iOrderService;
 
+
+    /**
+     * 创建订单
+     *
+     * @param session
+     * @param shippingId
+     * @return
+     */
+    @RequestMapping("create.do")
+    @ResponseBody
+    public ServerResponse create(HttpSession session, Integer shippingId) {
+        User user = (User) session.getAttribute(Const.CURRENT_USER);
+        if (user == null) {
+            return ServerResponse.createByErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(), ResponseCode.NEED_LOGIN.getDesc());
+        }
+        return iOrderService.createOrder(user.getId(), shippingId);
+    }
+
+
+    /**
+     * 支付宝支付
+     * ======================================
+     *
+     * @param session
+     * @param orderNo
+     * @param request
+     * @return
+     */
     @RequestMapping("pay.do")
     @ResponseBody
     public ServerResponse pay(HttpSession session, Long orderNo, HttpServletRequest request) {
@@ -84,7 +112,6 @@ public class OrderController {
         }
         return Const.AlipayCallback.RESPONSE_FAILED;
     }
-
 
     @RequestMapping("query_order_pay_status.do")
     @ResponseBody

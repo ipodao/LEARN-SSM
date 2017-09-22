@@ -12,4 +12,6 @@ public interface IOrderService {
     public ServerResponse pay(Long orderNo, Integer userId, String path);
 
     ServerResponse aliCallback(Map<String, String> params);
+
+    ServerResponse createOrder(Integer userId,Integer shippingId);
 }

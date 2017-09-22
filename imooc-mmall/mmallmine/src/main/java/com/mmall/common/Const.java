@@ -32,6 +32,7 @@ public class Const {
         int ROLE_ADMIN = 1;//管理员
     }
 
+    /*产品状态*/
     public enum ProductStatusEnum {
         ON_SALE(1, "在线");
         private String value;
@@ -51,6 +52,7 @@ public class Const {
         }
     }
 
+    /*订单状态*/
     public enum OrderStatusEnum {
         CANCELED(0, "已取消"),
         NO_PAY(10, "未支付"),
@@ -85,6 +87,7 @@ public class Const {
         }
     }
 
+    /*支付回调*/
     public interface AlipayCallback {
         String TRADE_STATUS_WAIT_BUYER_PAY = "WAIT_BUYER_PAY";
         String TRADE_STATUS_TRADE_SUCCESS = "TRADE_SUCCESS";
@@ -93,6 +96,7 @@ public class Const {
         String RESPONSE_FAILED = "failed";
     }
 
+    /*支付方式*/
     public enum PayPlatformEnum {
         ALIPAY(1, "支付宝");
 
@@ -113,6 +117,7 @@ public class Const {
         }
     }
 
+    /*支付类型*/
     public enum PaymentTypeEnum {
         ONLINE_PAY(1, "在线支付");
 
