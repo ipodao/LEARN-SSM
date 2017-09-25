@@ -15,12 +15,12 @@
     <!--2.数据库连接池-->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <!--配置连接池属性-->
-        <property name="driverClass" value="${db.driver}" />
+        <property name="driverClass" value="${db.driver}"/>
 
         <!-- 基本属性 url、user、password -->
-        <property name="jdbcUrl" value="${db.url}" />
-        <property name="user" value="${db.username}" />
-        <property name="password" value="${db.password}" />
+        <property name="jdbcUrl" value="${db.url}"/>
+        <property name="user" value="${db.username}"/>
+        <property name="password" value="${db.password}"/>
 
         <!--c3p0私有属性-->
         <property name="maxPoolSize" value="30"/>

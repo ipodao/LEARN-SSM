@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Seckill {
     @Override
-    public String   toString() {
+    public String toString() {
         return "Seckill{" +
                 "seckillId=" + seckillId +
                 ", name='" + name + '\'' +
