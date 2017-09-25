@@ -45,7 +45,7 @@ public class SeckillDaoTest {
     @Test
     public void reduceNumber() throws Exception {
 
-        long seckillId = 1000;
+        long seckillId = 1006;
         Date date = new Date();
         int updateCount = seckillDao.reduceNumber(seckillId, date);
         System.out.println(updateCount);
