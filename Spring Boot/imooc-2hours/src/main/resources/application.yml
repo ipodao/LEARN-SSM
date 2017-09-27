@@ -13,6 +13,17 @@
 
 #更改多环境配置
 #Java jar 启动加参数：java -jar target/.jar --spring.profiles.active=dev (or prod)
+#DataSource：数据库配置
+#jpa：spring-boot-jpa
 spring:
   profiles:
     active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/imooc_springboot_2hours
+    username: storm
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update #create：每次删除表的内容再创建表；update：不删除。。
+    show-sql: true
