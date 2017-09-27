@@ -11,7 +11,8 @@
 #  cupSize: B
 #  age: 18
 
-#使用dev配置
+#更改多环境配置
+#Java jar 启动加参数：java -jar target/.jar --spring.profiles.active=dev (or prod)
 spring:
   profiles:
-    active: prod
+    active: dev
