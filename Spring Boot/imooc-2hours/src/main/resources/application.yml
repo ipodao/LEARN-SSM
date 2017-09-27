@@ -1,0 +1,17 @@
+#server:
+#  port: 8080
+#  context-path: /girl
+#
+#cupSize: B
+#age: 18
+##配置文件里使用配置文件
+#content: "cupSize:${cupSize},age:${age}"
+#
+#girl:
+#  cupSize: B
+#  age: 18
+
+#使用dev配置
+spring:
+  profiles:
+    active: prod
