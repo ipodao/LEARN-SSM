@@ -2,8 +2,10 @@ package com.storm.controller;
 
 import com.storm.aspect.HttpAspect;
 import com.storm.domain.Girl;
+import com.storm.domain.Result;
 import com.storm.repository.GirlRepository;
 import com.storm.service.GirlService;
+import com.storm.utils.ResultUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,16 +54,15 @@ public class GirlController {
      * @return
      */
     @PostMapping(value = "/girls")
-    public Girl girlAdd(@Valid Girl girl, BindingResult bindingResult) {
+    public Result<Girl> girlAdd(@Valid Girl girl, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {//发生错误
-            System.out.println(bindingResult.getFieldError().getDefaultMessage());
-            return null;
+//            return null;
+            return ResultUtil.error(1, bindingResult.getFieldError().getDefaultMessage());
         }
-        System.out.println("no problem");
         girl.setCupSize(girl.getCupSize());
         girl.setAge(girl.getAge());
 
-        return girlRepository.save(girl);
+        return ResultUtil.success(girlRepository.save(girl));
     }
 
     /**
@@ -111,5 +112,16 @@ public class GirlController {
     @PostMapping(value = "/girls/two")
     public void girlTwo() {
         girlService.insertTwo();
+    }
+
+    /**
+     * 统一异常处理！！！
+     *
+     * @param id
+     * @throws Exception
+     */
+    @GetMapping(value = "/girls/getAge/{id}")
+    public void getAge(@PathVariable("id") Integer id) throws Exception {
+        girlService.getAge(id);
     }
 }

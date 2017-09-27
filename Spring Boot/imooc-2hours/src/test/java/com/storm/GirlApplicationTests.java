@@ -1,4 +1,4 @@
-package com.storm.girl;
+package com.storm;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
