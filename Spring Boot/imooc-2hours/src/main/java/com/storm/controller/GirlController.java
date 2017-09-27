@@ -1,12 +1,22 @@
-package com.storm.girl;
+package com.storm.controller;
 
+import com.storm.aspect.HttpAspect;
+import com.storm.domain.Girl;
+import com.storm.repository.GirlRepository;
+import com.storm.service.GirlService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
 public class GirlController {
+
+    private final static Logger logger = LoggerFactory.getLogger(HttpAspect.class);
 
     @Autowired
     private GirlRepository girlRepository;
@@ -21,6 +31,7 @@ public class GirlController {
      */
     @GetMapping(value = "/girls")
     public List<Girl> girlList() {
+        logger.info("girlList");
         return girlRepository.findAll();
     }
 
@@ -36,17 +47,19 @@ public class GirlController {
 
     /**
      * 添加一个女生
+     * x-www-form-urlencoded ???
      *
-     * @param cupSize
-     * @param age
      * @return
      */
     @PostMapping(value = "/girls")
-    public Girl girlAdd(@RequestParam("cupSize") String cupSize,
-                        @RequestParam("age") Integer age) {
-        Girl girl = new Girl();
-        girl.setCupSize(cupSize);
-        girl.setAge(age);
+    public Girl girlAdd(@Valid Girl girl, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {//发生错误
+            System.out.println(bindingResult.getFieldError().getDefaultMessage());
+            return null;
+        }
+        System.out.println("no problem");
+        girl.setCupSize(girl.getCupSize());
+        girl.setAge(girl.getAge());
 
         return girlRepository.save(girl);
     }

@@ -1,8 +1,9 @@
-package com.storm.girl;
+package com.storm.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.Min;
 
 /**
  * 数据库对应实体类
@@ -10,6 +11,14 @@ import javax.persistence.Id;
  */
 @Entity
 public class Girl {
+    @Override
+    public String toString() {
+        return "Girl{" +
+                "id=" + id +
+                ", cupSize='" + cupSize + '\'' +
+                ", age=" + age +
+                '}';
+    }
 
     @Id
     @GeneratedValue
@@ -17,6 +26,7 @@ public class Girl {
 
     private String cupSize;
 
+    @Min(value = 18, message = "未成年少年禁止入内")
     private Integer age;
 
 
